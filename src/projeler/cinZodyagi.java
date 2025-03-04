@@ -6,6 +6,7 @@ public class cinZodyagi {
     public static void main(String[] args) {
 
         Scanner scanner = new Scanner(System.in);
+
         System.out.print("Doğum yılınızı giriniz : ");
         int dateOfBirth = scanner.nextInt();
 
