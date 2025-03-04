@@ -11,7 +11,7 @@ public class aritmetikIslemler {
         int numB = scanner.nextInt();
         int numC = scanner.nextInt();
 
-        System.out.println("İşlem sonucu :" + (numA + (numB * numC) - numB));
+        System.out.println("İşlem sonucu : " + (((numA + numB) * numC)- numB));
     }
     /*
         Soru: Kullanıcıdan 3 tane sayı (a, b, c) alıp bu sayıları işlem sırasına göre işleyen bir program yazın.
