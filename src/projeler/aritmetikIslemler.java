@@ -6,11 +6,11 @@ public class aritmetikIslemler {
     public static void main(String[] args) {
 
         Scanner scanner = new Scanner(System.in);
-        System.out.print("3 Sayı Giriniz :");
-        int num1 = scanner.nextInt();
-        int num2 = scanner.nextInt();
-        int num3 = scanner.nextInt();
+        System.out.print("A,B,C Sayılarını Sırayla Giriniz :");
+        int numA = scanner.nextInt();
+        int numB = scanner.nextInt();
+        int numC = scanner.nextInt();
 
-        System.out.println(num1 + (num2 * num3) - num2);
+        System.out.println(numA + (numB * numC) - numB);
     }
 }
