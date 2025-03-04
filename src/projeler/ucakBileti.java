@@ -5,7 +5,6 @@ import java.util.Scanner;
 public class ucakBileti {
     public static void main(String[] args) {
 
-
         /*
         Kullanıcıdan alınan değerler geçerli (mesafe ve yaş değerleri pozitif sayı, yolculuk tipi ise 1 veya 2) olmalıdır.
         Aksi takdirde kullanıcıya "Hatalı Veri Girdiniz !" şeklinde bir uyarı verilmelidir.
@@ -50,7 +49,8 @@ public class ucakBileti {
             price = price - discount; }
         // Bilet Tipi kontrolü
         if (type == 2){
-            price *= 0.8 * 2;
+            //%20 indirim ve 2 Bilet(price *= 0,8 * 2)
+            price *= 1.6;
         }
         //Toplam tutarı yazdırma
         System.out.println("Toplam Tutar : " + price);
