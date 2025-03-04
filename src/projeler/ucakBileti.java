@@ -38,31 +38,19 @@ public class ucakBileti {
         double price = distance * 0.10;
         double discount;
 
-        //Yaş Kontrolü ve Uçuş tipi kontrolleri
+        //Yaş Kontrolü
         if (age<12){
             discount = price * 0.50;
             price = price - discount;
-                if (type == 2){
-                price *= 0.8 * 2;
-                }
-        }
-        else if(age >= 12 &&  age < 24){
+        } else if(age >= 12 &&  age < 24){
             discount = price * 0.10;
             price = price - discount;
-                if (type == 2){
-                    price *= 0.8 * 2;
-                }
-        }
-        else if(age > 65){
+        } else if(age > 65){
             discount = price * 0.30;
-            price = price - discount;
-                if (type == 2){
-                    price *= 0.8 * 2;
-                }
-        } else {
-                if (type == 2){
-                    price *= 0.8 * 2;
-                }
+            price = price - discount; }
+        // Bilet Tipi kontrolü
+        if (type == 2){
+            price *= 0.8 * 2;
         }
         //Toplam tutarı yazdırma
         System.out.println("Toplam Tutar : " + price);
