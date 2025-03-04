@@ -13,7 +13,7 @@ public class aritmetikIslemler {
         int numC = scanner.nextInt();
 
         // Soruda istendiği gibi işlem önceliğine göre hesaplama yapıyoruz
-        // İşlem sırası : a + b * c - b
+        // İşlem sırası : a + b * c - b;
         System.out.println("İşlem sonucu : " + (((numA + numB) * numC) - numB));
     }
 }
