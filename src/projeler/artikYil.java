@@ -3,6 +3,7 @@ package projeler;
 import java.util.Scanner;
 
 public class artikYil {
+
     public static void main(String[] args) {
 
         Scanner scanner = new Scanner(System.in);
@@ -15,5 +16,6 @@ public class artikYil {
         else{
             System.out.println(year + " artık yıl değildir.");
         }
+
     }
 }
