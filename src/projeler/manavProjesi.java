@@ -2,7 +2,7 @@ package projeler;
 
 import java.util.Scanner;
 
-public class manavprojesi {
+public class manavProjesi {
     public static void main(String[] args) {
 
         double armut = 2.14;

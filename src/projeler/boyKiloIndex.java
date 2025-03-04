@@ -2,7 +2,7 @@ package projeler;
 
 import java.util.Scanner;
 
-public class boykiloindex {
+public class boyKiloIndex {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 
