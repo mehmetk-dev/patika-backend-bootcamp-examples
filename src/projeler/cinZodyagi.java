@@ -9,6 +9,7 @@ public class cinZodyagi {
         System.out.print("Doğum yılınızı giriniz : ");
         int dateOfBirth = scanner.nextInt();
 
+        //Çin zodyağı hesaplanırken kişinin doğum yılının 12 ile bölümünde kalana göre bulunur.
         int zodiac = dateOfBirth % 12;
 
         String result = switch (zodiac){
