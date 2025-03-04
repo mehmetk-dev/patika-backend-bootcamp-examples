@@ -11,6 +11,6 @@ public class aritmetikIslemler {
         int numB = scanner.nextInt();
         int numC = scanner.nextInt();
 
-        System.out.println("İşlem sonucu" + (numA + (numB * numC) - numB));
+        System.out.println("İşlem sonucu :" + (numA + (numB * numC) - numB));
     }
 }
