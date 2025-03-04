@@ -30,37 +30,42 @@ public class ucakBileti {
         System.out.print("1)Tek Yön;\n2)Gidiş-Dönüş;\nYolculuk Tipini Seçiniz: ");
         int type = scanner.nextInt();
 
+        //Hatalı Veri Kontrolü
         if (distance <= 0 || age <= 0 || type != 1 && type != 2) {
             System.out.println("Hatalı Veri Girdiniz");
         } else {
+            //KM Başına ücret hesaplaması
         double price = distance * 0.10;
         double discount;
 
-            if (age<12){
+        //Yaş Kontrolü ve Uçuş tipi kontrolleri
+        if (age<12){
             discount = price * 0.50;
             price = price - discount;
-            if (type == 2){
+                if (type == 2){
                 price *= 0.8 * 2;
-            } }
-            else if(age >= 12 &&  age < 24){
-                discount = price * 0.10;
-                price = price - discount;
-                if (type == 2){
-                    price *= 0.8 * 2;
-                 }
-            }
-            else if(age > 65){
-                discount = price * 0.30;
-                price = price - discount;
+                }
+        }
+        else if(age >= 12 &&  age < 24){
+            discount = price * 0.10;
+            price = price - discount;
                 if (type == 2){
                     price *= 0.8 * 2;
                 }
-            } else {
+        }
+        else if(age > 65){
+            discount = price * 0.30;
+            price = price - discount;
                 if (type == 2){
                     price *= 0.8 * 2;
                 }
-            }
-            System.out.println("Toplam Tutar : " + price);
+        } else {
+                if (type == 2){
+                    price *= 0.8 * 2;
+                }
+        }
+        //Toplam tutarı yazdırma
+        System.out.println("Toplam Tutar : " + price);
         }
     }
 }
