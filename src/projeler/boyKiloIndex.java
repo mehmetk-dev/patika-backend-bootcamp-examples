@@ -12,6 +12,7 @@ public class boyKiloIndex {
         System.out.print("Lütfen Kilonuzu Giriniz : ");
         double weight = scanner.nextDouble();
 
+        //vucüt kitle indeks formülü
         double bmi = weight /(height * height);
 
         System.out.println("Vücut Kitle İndeksiniz : "+ bmi);
