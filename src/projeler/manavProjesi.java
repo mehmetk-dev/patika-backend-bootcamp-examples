@@ -32,5 +32,7 @@ public class manavProjesi {
                 (patlıcan * patlıcanKg);
 
         System.out.println("Toplam Fiyat : " + toplam  + " TL");
+
+
     }
 }
