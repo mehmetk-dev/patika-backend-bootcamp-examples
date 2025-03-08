@@ -23,7 +23,7 @@ public class MatrixTranspose {
         for (int i = 0; i < rows; i++) {
             for (int j = 0; j < cols; j++) {
                 transposeMatris[j][i] = matris[i][j]; // Sırayla satır ve sütunları yer değiştiriyoruz.
-            } // tmatris[2][0] = matris[0][2]  şeklinde değişiyor.
+            } // transposematris[2][0] = matris[0][2]  şeklinde değişiyor.
         }
 
         System.out.println("Transpose Matris"); // Transpoz matrisi yazdırıyoruz.
