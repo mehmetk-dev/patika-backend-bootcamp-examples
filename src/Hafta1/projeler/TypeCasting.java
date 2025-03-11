@@ -1,3 +1,5 @@
+package Hafta1.projeler;
+
 import java.util.Scanner;
 
 public class TypeCasting {
