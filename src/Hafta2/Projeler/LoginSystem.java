@@ -1,8 +1,6 @@
 package Hafta2.Projeler;
 
-import java.sql.SQLOutput;
 import java.util.Scanner;
-import java.util.SimpleTimeZone;
 
 public class LoginSystem {
     public static void main(String[] args) {
