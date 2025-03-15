@@ -6,6 +6,7 @@ public class Employee {
     protected int workHours;
     protected int hireYear;
 
+    //Kurucu Metot
     public Employee(String nameSurname, double salary, int workHours, int hireYear) {
         this.nameSurname = nameSurname;
         this.salary = salary;
@@ -13,6 +14,7 @@ public class Employee {
         this.hireYear = hireYear;
     }
 
+    //Maaş zammı Hesaplama Metodu
     public double raiseSalary(){
         int year = 2021 - hireYear;
         if (year <= 9){
@@ -25,6 +27,8 @@ public class Employee {
             return salary * 0.15;
         }
     }
+
+    //Bonus Hesaplama Metodu
     public double bonus(){
         if (workHours >= 40){
             return (workHours - 40) * 30;
@@ -32,6 +36,7 @@ public class Employee {
         return 0;
     }
 
+    //Vergi Hesaplama Metodu
     public double tax(){
         if (salary <= 1000){
             return 0;
@@ -40,6 +45,7 @@ public class Employee {
         }
     }
 
+    //Çaşışanlara ait bilgileri döndüren toString metodu
     @Override
     public String toString() {
         double taxAmount = tax();
