@@ -19,4 +19,7 @@ public class Exponentiation {
 
         return num * powerCalculate(num,pow-1);
     }
+    public void pow(int i){
+        System.out.println(i);
+    }
 }

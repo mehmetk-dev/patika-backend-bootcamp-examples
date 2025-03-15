@@ -16,6 +16,11 @@ public class RecursivePrimeNumber {
         }else{
             System.out.println(num + " sayısı ASAL değildir !");
         }
+       // Exponentiation ex = new Exponentiation();
+        Exponentiation.powerCalculate(1,2);
+        Exponentiation ex = new Exponentiation();
+        ex.pow(1);
+
     }
     public static boolean isPrime(int number,int divisor){
         if (number <=1) { // eğer sayı 1'se asal değildir
