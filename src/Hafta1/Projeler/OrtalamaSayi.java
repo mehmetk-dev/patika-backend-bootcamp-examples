@@ -2,7 +2,7 @@ package Hafta1.Projeler;
 
 import java.util.Scanner;
 
-public class numAvg {
+public class OrtalamaSayi {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         System.out.print("Bir sayı giriniz: ");

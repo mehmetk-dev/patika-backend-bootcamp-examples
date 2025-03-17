@@ -2,7 +2,7 @@ package Hafta1.Projeler;
 
 import java.util.Scanner;
 
-public class projedenemeleri {
+public class Example {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         // ters yıldız yazan program
