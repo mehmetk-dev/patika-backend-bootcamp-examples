@@ -1,0 +1,447 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="0c56b9b9-4d62-47cc-b536-e50dca710e1d" name="Changes" comment="Proje dosyası güncellendi. Proje isimleri CamelCase şekilde ayarlandı.">
+      <change beforePath="$PROJECT_DIR$/src/Hafta1/Projeler/Example.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Hafta1/Projeler/Example.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Hafta1/Projeler/OrtalamaSayi.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Hafta1/Projeler/OrtalamaSayi.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Hafta1/Projeler/UcakBiletiProgrami.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Hafta1/Projeler/UcakBiletiProgrami.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Hafta1/prework/TestMatrix.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Hafta1/prework/TestMatrix.java" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Enum" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;mehmetk-dev&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/mehmetk-dev/java-dersleri.git&quot;,
+    &quot;accountId&quot;: &quot;b06c3164-1ee3-4d69-8d91-e41c3e0cf920&quot;
+  }
+}</component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 4
+}</component>
+  <component name="ProjectId" id="2tTp2LE03VoHnTW2QHi1bfFODHa" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="1" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Application.BankingSystem.executor": "Run",
+    "Application.CarTest.executor": "Run",
+    "Application.CarpimTablosu.executor": "Run",
+    "Application.DateAPI.executor": "Run",
+    "Application.DateAPIFormating.executor": "Run",
+    "Application.EBOB.executor": "Run",
+    "Application.Employee.executor": "Run",
+    "Application.Exponentiation.executor": "Run",
+    "Application.FaizHesaplama.executor": "Run",
+    "Application.Game.executor": "Run",
+    "Application.InvertedTriangle.executor": "Run",
+    "Application.KullaniciGiris.executor": "Run",
+    "Application.LoginSystem.executor": "Run",
+    "Application.Main.executor": "Run",
+    "Application.MatrixTranspose.executor": "Run",
+    "Application.NarcissisticNum.executor": "Run",
+    "Application.NumberRounder.executor": "Run",
+    "Application.PalidromNumbers.executor": "Run",
+    "Application.PerfectNumber.executor": "Run",
+    "Application.PowerNumberExample.executor": "Run",
+    "Application.PrimeNumber2.executor": "Run",
+    "Application.RecursiveMethods.executor": "Run",
+    "Application.RecursivePrimeNumber.executor": "Run",
+    "Application.StrBuilder.executor": "Run",
+    "Application.StrPool.executor": "Run",
+    "Application.StringBuilder.executor": "Run",
+    "Application.Test.executor": "Run",
+    "Application.TypeCasting.executor": "Run",
+    "Application.aritmetikIslemler.executor": "Run",
+    "Application.arrays.executor": "Run",
+    "Application.arraysalistirma.executor": "Run",
+    "Application.artikYil.executor": "Run",
+    "Application.asalSayi.executor": "Run",
+    "Application.cinzodyagi.executor": "Run",
+    "Application.classs.executor": "Run",
+    "Application.deneme.executor": "Run",
+    "Application.denemeee.executor": "Run",
+    "Application.fibonacci.executor": "Run",
+    "Application.fibonacci2.executor": "Run",
+    "Application.manavprojesi.executor": "Run",
+    "Application.multiarray.executor": "Run",
+    "Application.numAvg.executor": "Run",
+    "Application.projedenemeleri.executor": "Run",
+    "Application.transpoz.executor": "Run",
+    "Application.ucakBileti.executor": "Run",
+    "Application.ucakbileti.executor": "Coverage",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "git-widget-placeholder": "master",
+    "ignore.virus.scanning.warn.message": "true",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "C:/Users/Mehme/IdeaProjects",
+    "settings.editor.selected.configurable": "preferences.pluginManager"
+  },
+  "keyToStringList": {
+    "com.intellij.ide.scratch.ScratchImplUtil$2/New Scratch File": [
+      "PLAIN_TEXT"
+    ]
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Mehme\IdeaProjects\java-dersleri\Week1" />
+    </key>
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="Hafta2.Projeler" />
+    </key>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="0c56b9b9-4d62-47cc-b536-e50dca710e1d" name="Changes" comment="" />
+      <created>1740385714053</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1740385714053</updated>
+    </task>
+    <task id="LOCAL-00001" summary="yeni projeler eklendi">
+      <option name="closed" value="true" />
+      <created>1741084223277</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1741084223277</updated>
+    </task>
+    <task id="LOCAL-00002" summary="yeni projeler eklendi">
+      <option name="closed" value="true" />
+      <created>1741086884284</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1741086884284</updated>
+    </task>
+    <task id="LOCAL-00003" summary="yeni projeler eklendi">
+      <option name="closed" value="true" />
+      <created>1741087297031</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1741087297031</updated>
+    </task>
+    <task id="LOCAL-00004" summary="yeni projeler eklendi">
+      <option name="closed" value="true" />
+      <created>1741087353402</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1741087353402</updated>
+    </task>
+    <task id="LOCAL-00005" summary="yeni projeler eklendi">
+      <option name="closed" value="true" />
+      <created>1741087373352</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1741087373352</updated>
+    </task>
+    <task id="LOCAL-00006" summary="yeni projeler eklendi">
+      <option name="closed" value="true" />
+      <created>1741087432049</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1741087432049</updated>
+    </task>
+    <task id="LOCAL-00007" summary="yeni projeler eklendi">
+      <option name="closed" value="true" />
+      <created>1741088201379</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1741088201379</updated>
+    </task>
+    <task id="LOCAL-00008" summary="yeni projeler eklendi">
+      <option name="closed" value="true" />
+      <created>1741088610396</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1741088610396</updated>
+    </task>
+    <task id="LOCAL-00009" summary="yeni projeler eklendi">
+      <option name="closed" value="true" />
+      <created>1741088636843</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1741088636843</updated>
+    </task>
+    <task id="LOCAL-00010" summary="proje güncellendi">
+      <option name="closed" value="true" />
+      <created>1741089004594</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1741089004594</updated>
+    </task>
+    <task id="LOCAL-00011" summary="proje güncellendi">
+      <option name="closed" value="true" />
+      <created>1741089083467</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1741089083467</updated>
+    </task>
+    <task id="LOCAL-00012" summary="proje güncellendi">
+      <option name="closed" value="true" />
+      <created>1741089121268</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1741089121268</updated>
+    </task>
+    <task id="LOCAL-00013" summary="proje güncellendi">
+      <option name="closed" value="true" />
+      <created>1741089185161</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1741089185161</updated>
+    </task>
+    <task id="LOCAL-00014" summary="proje güncellendi">
+      <option name="closed" value="true" />
+      <created>1741090298939</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1741090298939</updated>
+    </task>
+    <task id="LOCAL-00015" summary="proje güncellendi">
+      <option name="closed" value="true" />
+      <created>1741090565284</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1741090565284</updated>
+    </task>
+    <task id="LOCAL-00016" summary="proje güncellendi">
+      <option name="closed" value="true" />
+      <created>1741090730791</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1741090730791</updated>
+    </task>
+    <task id="LOCAL-00017" summary="proje güncellendi">
+      <option name="closed" value="true" />
+      <created>1741090834787</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1741090834787</updated>
+    </task>
+    <task id="LOCAL-00018" summary="proje güncellendi">
+      <option name="closed" value="true" />
+      <created>1741092548804</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1741092548804</updated>
+    </task>
+    <task id="LOCAL-00019" summary="proje güncellendi">
+      <option name="closed" value="true" />
+      <created>1741092568990</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1741092568990</updated>
+    </task>
+    <task id="LOCAL-00020" summary="proje eklendi">
+      <option name="closed" value="true" />
+      <created>1741214942635</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1741214942635</updated>
+    </task>
+    <task id="LOCAL-00021" summary="proje eklendi">
+      <option name="closed" value="true" />
+      <created>1741215033316</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1741215033316</updated>
+    </task>
+    <task id="LOCAL-00022" summary="proje eklendi">
+      <option name="closed" value="true" />
+      <created>1741216128843</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1741216128843</updated>
+    </task>
+    <task id="LOCAL-00023" summary="TypeCasting eklendi">
+      <option name="closed" value="true" />
+      <created>1741445272044</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1741445272044</updated>
+    </task>
+    <task id="LOCAL-00024" summary="Klasör güncellendi">
+      <option name="closed" value="true" />
+      <created>1741683904934</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1741683904934</updated>
+    </task>
+    <task id="LOCAL-00025" summary="Yeni proje eklendi">
+      <option name="closed" value="true" />
+      <created>1741683944326</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1741683944326</updated>
+    </task>
+    <task id="LOCAL-00026" summary="Yeni proje eklendi">
+      <option name="closed" value="true" />
+      <created>1741683982333</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1741683982333</updated>
+    </task>
+    <task id="LOCAL-00027" summary="2.Proje Eklendi">
+      <option name="closed" value="true" />
+      <created>1741687448896</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1741687448896</updated>
+    </task>
+    <task id="LOCAL-00028" summary="Recursive Proje Eklendi.">
+      <option name="closed" value="true" />
+      <created>1741803689525</created>
+      <option name="number" value="00028" />
+      <option name="presentableId" value="LOCAL-00028" />
+      <option name="project" value="LOCAL" />
+      <updated>1741803689525</updated>
+    </task>
+    <task id="LOCAL-00029" summary="Recursive Proje Eklendi.">
+      <option name="closed" value="true" />
+      <created>1741804152843</created>
+      <option name="number" value="00029" />
+      <option name="presentableId" value="LOCAL-00029" />
+      <option name="project" value="LOCAL" />
+      <updated>1741804152843</updated>
+    </task>
+    <task id="LOCAL-00030" summary="Ödev Yüklendi.">
+      <option name="closed" value="true" />
+      <created>1742037580554</created>
+      <option name="number" value="00030" />
+      <option name="presentableId" value="LOCAL-00030" />
+      <option name="project" value="LOCAL" />
+      <updated>1742037580554</updated>
+    </task>
+    <task id="LOCAL-00031" summary="Ödev Yüklendi.">
+      <option name="closed" value="true" />
+      <created>1742037717807</created>
+      <option name="number" value="00031" />
+      <option name="presentableId" value="LOCAL-00031" />
+      <option name="project" value="LOCAL" />
+      <updated>1742037717807</updated>
+    </task>
+    <task id="LOCAL-00032" summary="Projeler Eklendi.">
+      <option name="closed" value="true" />
+      <created>1742038140396</created>
+      <option name="number" value="00032" />
+      <option name="presentableId" value="LOCAL-00032" />
+      <option name="project" value="LOCAL" />
+      <updated>1742038140396</updated>
+    </task>
+    <task id="LOCAL-00033" summary="Projeler Eklendi.">
+      <option name="closed" value="true" />
+      <created>1742244543505</created>
+      <option name="number" value="00033" />
+      <option name="presentableId" value="LOCAL-00033" />
+      <option name="project" value="LOCAL" />
+      <updated>1742244543505</updated>
+    </task>
+    <task id="LOCAL-00034" summary="Proje dosyası güncellendi. Proje isimleri CamelCase şekilde ayarlandı.">
+      <option name="closed" value="true" />
+      <created>1742245385153</created>
+      <option name="number" value="00034" />
+      <option name="presentableId" value="LOCAL-00034" />
+      <option name="project" value="LOCAL" />
+      <updated>1742245385153</updated>
+    </task>
+    <option name="localTasksCounter" value="35" />
+    <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="yeni projeler eklendi" />
+    <MESSAGE value="proje güncellendi" />
+    <MESSAGE value="proje eklendi" />
+    <MESSAGE value="TypeCasting eklendi" />
+    <MESSAGE value="Klasör güncellendi" />
+    <MESSAGE value="Yeni proje eklendi" />
+    <MESSAGE value="2.Proje Eklendi" />
+    <MESSAGE value="Recursive Proje Eklendi." />
+    <MESSAGE value="Ödev Yüklendi." />
+    <MESSAGE value="Projeler Eklendi." />
+    <MESSAGE value="Proje dosyası güncellendi. Proje isimleri CamelCase şekilde ayarlandı." />
+    <option name="LAST_COMMIT_MESSAGE" value="Proje dosyası güncellendi. Proje isimleri CamelCase şekilde ayarlandı." />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <breakpoint enabled="true" type="java-exception">
+          <properties class="java.lang.ArithmeticException" package="java.lang" />
+          <option name="timeStamp" value="1" />
+        </breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/java_dersleri$ucakBileti.ic" NAME="ucakBileti Coverage Results" MODIFIED="1741082926563" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="true">
+      <FILTER>projeler.*</FILTER>
+    </SUITE>
+  </component>
+</project>
