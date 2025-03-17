@@ -2,7 +2,7 @@ package Hafta1.Projeler;
 
 import java.util.Scanner;
 
-public class UcakBiletiProgrami {
+public class ucakBileti {
     public static void main(String[] args) {
 
         Scanner scanner = new Scanner(System.in);

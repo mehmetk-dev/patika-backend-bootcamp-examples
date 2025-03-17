@@ -1,4 +1,4 @@
-package Hafta1.prework;
+package Hafta1.Prework;
 
 import java.util.Scanner;
 

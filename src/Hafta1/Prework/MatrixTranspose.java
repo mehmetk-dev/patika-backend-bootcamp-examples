@@ -1,4 +1,4 @@
-package Hafta1.prework;
+package Hafta1.Prework;
 
 public class MatrixTranspose {
     public static void main(String[] args) {

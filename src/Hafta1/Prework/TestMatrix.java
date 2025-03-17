@@ -1,7 +1,7 @@
-package Hafta1.prework;
+package Hafta1.Prework;
 
 import java.util.Scanner;
-public class TestMatrix {
+public class deneme {
     public static void main(String[] args) {
         int matrix[][] = new int[3][4];
         Scanner input = new Scanner(System.in);
