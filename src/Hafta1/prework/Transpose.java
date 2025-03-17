@@ -1,6 +1,6 @@
 package Hafta1.prework;
 
-public class transpoz {
+public class Transpose {
     public static void main(String[] args) {
 
         int [][] numbers = {

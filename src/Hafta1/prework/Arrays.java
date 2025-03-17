@@ -1,6 +1,6 @@
 package Hafta1.prework;
 
-public class arrays {
+public class Arrays {
     public static void main(String[] args) {
         int [] number = new int[3];
         int number1[] = new int[5];
@@ -14,10 +14,10 @@ public class arrays {
             System.out.println(num);
         }
 
-        arraysalistirma ar = new arraysalistirma();
+        ArraysAlistirma ar = new ArraysAlistirma();
         ar.Metd(2);
 
 
-        arraysalistirma ar1 = new CarpimTablosu();
+        ArraysAlistirma ar1 = new CarpimTablosu();
     }
 }

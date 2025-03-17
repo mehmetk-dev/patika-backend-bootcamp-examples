@@ -1,8 +1,8 @@
-package Hafta1.projeler;
+package Hafta1.Projeler;
 
 import java.util.Scanner;
 
-public class boyKiloIndex {
+public class BoyKiloIndex {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 

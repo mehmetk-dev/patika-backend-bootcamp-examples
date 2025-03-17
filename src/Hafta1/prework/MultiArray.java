@@ -1,6 +1,6 @@
 package Hafta1.prework;
 
-public class multiarray {
+public class MultiArray {
     public static void main(String[] args) {
 
         int[][] numbers = new int[2][3];

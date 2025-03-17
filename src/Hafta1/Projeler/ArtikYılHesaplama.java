@@ -1,8 +1,8 @@
-package Hafta1.projeler;
+package Hafta1.Projeler;
 
 import java.util.Scanner;
 
-public class artikYil {
+public class ArtikYılHesaplama {
 
     public static void main(String[] args) {
 

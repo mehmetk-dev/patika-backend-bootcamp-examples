@@ -1,8 +1,8 @@
-package Hafta1.projeler;
+package Hafta1.Projeler;
 
 import java.util.Scanner;
 
-public class manavProjesi {
+public class ManavProjesi {
     public static void main(String[] args) {
 
         double armut = 2.14;

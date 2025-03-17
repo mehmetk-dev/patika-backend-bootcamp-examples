@@ -2,7 +2,7 @@ package Hafta1.prework;
 
 import java.util.Scanner;
 
-public class arraysalistirma {
+public class ArraysAlistirma {
     public static void Metd(int i){
         System.out.println(i);
     }

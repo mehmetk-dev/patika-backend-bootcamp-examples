@@ -1,8 +1,8 @@
-package Hafta1.projeler;
+package Hafta1.Projeler;
 
 import java.util.Scanner;
 
-public class fibonacci2 {
+public class Fibonacci {
     public static void main(String[] args) {
 
         Scanner scanner = new Scanner(System.in);
