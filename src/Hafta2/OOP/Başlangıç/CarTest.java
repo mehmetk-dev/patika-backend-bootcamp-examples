@@ -1,4 +1,4 @@
-package Hafta2.OOP;
+package Hafta2.OOP.Başlangıç;
 
 public class CarTest {
     public static void main(String[] args) {

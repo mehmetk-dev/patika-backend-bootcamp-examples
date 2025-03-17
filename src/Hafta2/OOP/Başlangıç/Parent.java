@@ -1,4 +1,4 @@
-package Hafta2.OOP;
+package Hafta2.OOP.Başlangıç;
 
 public class Parent {
     String message = "Message FromParent";
