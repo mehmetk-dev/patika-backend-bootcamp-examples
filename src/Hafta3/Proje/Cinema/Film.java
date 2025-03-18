@@ -39,8 +39,6 @@ Filtrelenmiş filmleri ekrana yazdırın.*/
         this.yearOfPublication = yearOfPublication;
         this.filmGenre = filmGenre;
         this.imdbRating = imdbRating;
-
-
     }
 
     public String getFilmName() {
@@ -85,8 +83,11 @@ Filtrelenmiş filmleri ekrana yazdırın.*/
 
     @Override
     public int compareTo(Film films) {
+        //Collections sınıfındaki sıralamayı neye göre belirlemek istediğimizi seçiyoruz. IMDB puanını seçtik.
         return this.imdbRating.compareTo(films.imdbRating);
     }
+
+    //Verilen String'e göre o türdeki filmleri döndüren metot
     public static ArrayList<Film> filterByGenre(ArrayList<Film> films, String genre){
         ArrayList<Film> filteredFilm = new ArrayList<>();
         for (Film film : films){
