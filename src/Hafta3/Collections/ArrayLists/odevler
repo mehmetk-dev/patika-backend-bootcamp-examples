@@ -1,0 +1,11 @@
+ArrayList Ödevleri
+Kolay: Kullanıcıdan alınan ArrayList<String> içindeki tüm elemanları tersten yazdıran bir program yaz.
+Orta: Bir ArrayList<Integer> oluşturup en büyük ve en küçük sayıyı bulan bir program yaz.
+Zor: Öğrenci nesnelerini ArrayList<Student> içinde saklayan bir sistem yap. Kullanıcıdan öğrenci ekleyip, ismine göre arama yapabilen bir fonksiyon ekle.
+
+
+
+LinkedList Ödevleri
+Kolay: Kullanıcıdan şehir isimleri alarak bir LinkedList<String> oluştur ve bu listeyi alfabetik sıralı şekilde yazdır.
+Orta: LinkedList<Integer> kullanarak bir yığın (stack) veri yapısı oluştur ve push, pop işlemlerini uygula.
+Zor: LinkedList<Integer> kullanarak bir sayıyı tersten yazdıran bir program yaz. (Örneğin, giriş 12345 ise çıkış 54321 olacak.)
