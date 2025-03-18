@@ -31,12 +31,23 @@ public class NearestNumbers {
         int minDifference = Integer.MAX_VALUE; // Farkı en başta en büyük alıyoruz ki diff değişkeni ne olursa olsun güncellesin diye.
         int closestPairFirst = -1, closestPairSecond = -1; //Bu değişkenler en yakın iki sayıyı bulana kadar bu değişkenlerin geçerli bir değer taşımamasını sağlamaktır.
 
-        for (int i = 0; i < numbers.size() - 1; i++) {
-            int diff = numbers.get(i+1) - numbers.get(i); //diff değişkeni numbers'in 1. ve 2. elemanının birbirinden farkını tutar.
-            if (diff < minDifference){//Eğer sıradaki fark daha azsa sayıları ve farkı günceller
-                minDifference = diff;
-                closestPairFirst = numbers.get(i);
-                closestPairSecond = numbers.get(i+1);
+//        for (int i = 0; i < numbers.size() - 1; i++) {
+//            int diff = numbers.get(i+1) - numbers.get(i); //diff değişkeni numbers'in 1. ve 2. elemanının birbirinden farkını tutar.
+//            if (diff < minDifference){//Eğer sıradaki fark daha azsa sayıları ve farkı günceller
+//                minDifference = diff;
+//                closestPairFirst = numbers.get(i);
+//                closestPairSecond = numbers.get(i+1);
+//            }
+//        }
+        // Tüm eleman çiftleri arasındaki farkı hesapla
+        for (int i = 0; i < numbers.size(); i++) {
+            for (int j = i + 1; j <numbers.size() ; j++) {
+                int diff =  Math.abs(numbers.get(i) - numbers.get(j));
+                if (diff < minDifference){
+                    minDifference = diff;
+                    closestPairFirst = numbers.get(i);
+                    closestPairSecond = numbers.get(j);
+                }
             }
         }
         System.out.println("En yakın iki sayı: " + closestPairFirst + " ve " + closestPairSecond);
