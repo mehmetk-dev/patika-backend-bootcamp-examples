@@ -1,7 +1,6 @@
-package Hafta3.Collections.LinkedList;
+package Hafta3.Collections.List.LinkedList;
 
 import java.util.LinkedList;
-import java.util.List;
 
 public class StackData {
     public static void main(String[] args) {

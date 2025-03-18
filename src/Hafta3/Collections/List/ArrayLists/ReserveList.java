@@ -1,4 +1,4 @@
-package Hafta3.Collections.ArrayLists;
+package Hafta3.Collections.List.ArrayLists;
 
 import java.util.Scanner;
 import java.util.ArrayList;
@@ -14,7 +14,6 @@ public class ReserveList {
         Scanner sc = new Scanner(System.in);
         int count = sc.nextInt();
         sc.nextLine();
-
         for (int i = 0; i < count; i++) {
             System.out.println("Girmek istediğiniz elemanı yazınız!");
             String names = sc.nextLine();

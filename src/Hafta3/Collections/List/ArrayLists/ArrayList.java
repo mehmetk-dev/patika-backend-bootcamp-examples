@@ -1,4 +1,4 @@
-package Hafta3.Collections.ArrayLists;
+package Hafta3.Collections.List.ArrayLists;
 
 
 public class ArrayList {

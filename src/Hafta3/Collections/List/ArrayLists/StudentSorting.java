@@ -1,4 +1,4 @@
-package Hafta3.Collections.ArrayLists;
+package Hafta3.Collections.List.ArrayLists;
 
 import java.util.ArrayList;
 import java.util.Comparator;
