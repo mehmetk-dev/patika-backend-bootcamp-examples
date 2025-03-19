@@ -27,6 +27,7 @@ public class SetTest {
         cities.add("İstanbul");
         cities.add("Keşan");
         cities.add("Edirne");
+        cities.add("Edirne");
         System.out.println(cities);
 
         //TreeSet otomatik alfabetik ve küçükten büyüğe sıralar
