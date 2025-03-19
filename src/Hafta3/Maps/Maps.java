@@ -18,7 +18,7 @@ public class Maps {
         System.out.println(films.entrySet());
 
         for (Map.Entry<Integer,String> entir : films.entrySet()){
-            System.out.println(entir.getKey() + " = "+ entir.getValue() );
+            System.out.println(entir.getValue() + " = "+ entir.getKey() );
         }
     }
 }
