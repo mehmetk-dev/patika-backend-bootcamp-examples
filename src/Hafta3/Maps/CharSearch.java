@@ -15,7 +15,7 @@ public class CharSearch {
         Map<Character,Integer> chars = new TreeMap<>();
 
         for (int i = 0; i < word.length(); i++) {
-            Integer tekrarSayisi = 0;
+            Integer tekrarSayisi = 0; // Her harf için sayaç sıfırlanıyor
 
             for (int j = 0; j < word.length(); j++) {
                 if (Character.isLetter(word.charAt(i))){ //Gelen karakter harf olup olmadığının kontrolü
