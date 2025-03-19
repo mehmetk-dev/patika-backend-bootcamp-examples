@@ -26,7 +26,6 @@ public class CharSearch {
                     chars.put(word.charAt(i),tekrarSayisi);
                 }
             }
-
         }
         //Harfleri ve tekrarlarını ekrana yazdırma
         for (Map.Entry<Character,Integer> entry : chars.entrySet()){
