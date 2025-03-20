@@ -1,4 +1,4 @@
-package Hafta3.Maps;
+package Hafta3.Collections.Maps;
 
 import java.util.Map;
 import java.util.Scanner;
