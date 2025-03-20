@@ -19,6 +19,5 @@ public class RandomNumberSorting {
         System.out.println("Inline list");
         Collections.sort(numbers);
         System.out.println(numbers);
-
     }
 }
