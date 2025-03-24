@@ -19,9 +19,9 @@ public class Author {
 
     @Override
     public String toString() {
-        return "Yazar" +
+        return "Yazar " +
                 "Adı: '" + name + '\'' +
-                ", Soyadı: '" + surname + '\'' +
+                " Soyadı: '" + surname + '\'' +
                 '}';
     }
 }

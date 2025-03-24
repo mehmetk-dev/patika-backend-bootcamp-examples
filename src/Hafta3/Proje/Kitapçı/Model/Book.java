@@ -22,8 +22,7 @@ public class Book extends Product{
 
     @Override
     public String toString() {
-        return "Kitap: " +
-                "Yazar: " + author +
+        return "Kitap: " + author +
                 ",Kitap adı: '" + name + '\'' +
                 ",Fiyat: " + price ;
     }

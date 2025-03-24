@@ -23,7 +23,23 @@ public class UserService {
         }
     }
 
+    public User findUser(String name){
+        for (User user : users){
+            if (user.getEmail().equals(user)){
+                return user;
+            }
+        }
+        return null;
+    }
 
-
-
+    public User findEmail(String email){
+        User user1 = null;
+        for (User user : users){
+            if (user.getEmail().equals(email)){
+                user1 = user;
+                return user1;
+            }
+        }
+        return null;
+    }
 }

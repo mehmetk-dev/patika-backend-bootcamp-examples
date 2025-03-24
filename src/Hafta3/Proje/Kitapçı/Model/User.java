@@ -1,6 +1,9 @@
 package Hafta3.Proje.Kitapçı.Model;
 
 import java.time.LocalDate;
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Objects;
 
 public class User {
     private String name;
@@ -8,6 +11,7 @@ public class User {
     private String password;
     private LocalDate birthDate;
     private LocalDate registerDate;
+    private List<Order> orders = new ArrayList<>();
 
     public User(String name, String email, String password) {
         this.name = name;
@@ -56,6 +60,10 @@ public class User {
         this.registerDate = registerDate;
     }
 
+    public List<Order> getOrders() {
+        return orders;
+    }
+
     @Override
     public String toString() {
         return "User{" +
@@ -63,5 +71,17 @@ public class User {
                 ", email='" + email + '\'' +
                 ", password='" + password + '\'' +
                 '}';
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (o == null || getClass() != o.getClass()) return false;
+        User user = (User) o;
+        return Objects.equals(email, user.email);
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hashCode(email);
     }
 }
