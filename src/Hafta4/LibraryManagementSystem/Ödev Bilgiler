@@ -1,0 +1,36 @@
+Kütüphane Yönetim Sistemi - Gereksinimler
+Kütüphane Yönetim Sistemi projesi için isterler/gereksinimler (requirements) dökümanı
+
+Library Management System (Kütüphane Yönetim Sistemi)
+
+Uygulamanın amacı aşağıdaki konularda öğrencilere Pratik beceri kazandırmaktır.
+
+Sınıflar ve Nesneler: Kod, işlevselliği düzenlemek için sınıflara ayrılabilir (Kitap sınıfı gibi).
+
+Koleksiyonlar: Kitap nesnelerini depolamak ve yönetmek için koleksiyonlar kullanılabilir (ArrayList gibi).
+
+Konsol Giriş/Çıkış: Scanner sınıfı kullanıcı girdilerini işlerken, System.out çıktıları yönetir.
+
+Kontrol Akışı: Uygulamada, menü tabanlı bir arayüz oluşturmak için döngüler ve koşullu ifadeler kullanılabilir.
+
+Metodlar: Kod, daha iyi okunabilirlik ve yeniden kullanılabilirlik için metodlara ayrılmalıdır.
+
+Program console/terminal/siyah ekran üzerinde çalışacaktır ve kullanıcılara şu işlemleri yapma imkanı sağlamalıdır:
+
+Kullanıcı ekranı: Kullanıcı hangi işlemleri yapabileceğini gösteren bir ekran ile karşılanmalıdır.
+
+Kütüphaneye yeni kitaplar eklemek: Kullanıcı terminal ekranı aracılığı ile kütüphaneye yeni kitaplar ekleyebilmelidir.
+
+Kütüphanedeki tüm kitapları görüntülemek: Kullanıcı terminal ekranı aracılığı ile kütüphanedeki mevcut kitapları listeleyebilmelidir.
+
+Başlığa göre kitap aramak: Kullanıcı kitap ismine göre arama yapabilmelidir.
+
+Kitap ödünç almak: Kullanıcı mevcut bir kitabu ödünç alabilmelidir.
+
+Kitap daha önceden ödünç alınmış ve henüz iade edilmemişse uyarı verilmelidir. Ödünç alınan kitaplar işaretlenmelidir.
+ Bir kitap bir kez ödünç verilmiş ve henüz geri verilmemişse tekrar ödünç verilemez.
+
+Kitap iade etmek: Kullanıcı ödünç aldığı bir kitabı iade edebilmelidir.
+
+Programdan Çıkış: Her işlem sonrası karşılama menüsü tekrar kullanıcıya gösterilmeli ve
+ancak programdan çıkış seçeneği seçildiğinde programdan çıkılmalıdır.
