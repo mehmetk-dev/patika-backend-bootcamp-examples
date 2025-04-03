@@ -6,7 +6,7 @@ public class Employee {
     private String lastName;
     private ContactInfo contactInfo;
 
-    //Constructor to initialize employee's name and contact info
+    // Constructor to initialize employee's name and contact info
     public Employee(String firstName, String lastName,String email,String phone) {
         this.firstName = firstName;
         this.lastName = lastName;
@@ -18,7 +18,7 @@ public class Employee {
         private String phoneNumber;
         private String email;
 
-        //Constructor to initialize contact details
+        // Constructor to initialize contact details
         public ContactInfo(String phoneNumber, String email) {
             this.phoneNumber = phoneNumber;
             this.email = email;
