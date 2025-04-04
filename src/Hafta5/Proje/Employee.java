@@ -39,7 +39,7 @@ public class Employee {
 
     // Main method to test the structure
     public static void main(String[] args) {
-        Employee emp = new Employee("Mehmet","Kerem","mehmetkerem@gmail.com","05340711077");
+        Employee emp = new Employee("Mehmet","Kerem","mehmetkerem@gmail.com","0555555555");
         emp.showContatInfo();
     }
 
