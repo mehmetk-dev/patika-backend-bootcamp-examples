@@ -13,6 +13,7 @@ public class Employee {
         this.contactInfo = new ContactInfo(phone,email);
     }
 
+
     // Inner Class to store contact information
     public class ContactInfo{
         private String phoneNumber;
