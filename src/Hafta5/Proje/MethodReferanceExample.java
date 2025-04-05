@@ -20,6 +20,7 @@ public class MethodReferanceExample {
         }
         System.out.println();
 
+        // Method referance ile tek satırda yazıldı.
         names.forEach(System.out::println);
     }
 }
