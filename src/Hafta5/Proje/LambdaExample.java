@@ -26,12 +26,6 @@ public class LambdaExample {
 
         numbers.forEach(n -> System.out.println(square.apply(n)));
     }
-
-
-
-
-
-
 }
 
 
