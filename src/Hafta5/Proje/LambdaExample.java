@@ -26,7 +26,7 @@ public class LambdaExample {
 //
 //        numbers.forEach(n -> System.out.println(square.apply(n)));
           numbers.replaceAll(n -> n * 2);
-          numbers.forEach(number -> System.out.println(number));
+          numbers.forEach(number ->     System.out.println(number));
     }
 }
 
