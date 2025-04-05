@@ -24,10 +24,7 @@ public class LambdaExample {
         //Function<Integer,Integer> square = x -> x * x;
         Function<Integer,Double> square = x -> Math.pow(x,2);
 
-        for (int i = 0; i < numbers.size(); i++) {
-            System.out.println(square.apply(numbers.get(i)));
-        }
-
+        numbers.forEach(n -> System.out.println(square.apply(n)));
     }
 
 
