@@ -21,10 +21,13 @@ public class LambdaExample {
 //           System.out.println(number);
 //        }
 
-        //Function<Integer,Integer> square = x -> x * x;
-        Function<Integer,Double> square = x -> Math.pow(x,2);
-
-        numbers.forEach(n -> System.out.println(square.apply(n)));
+//        Method referance
+//        Function<Integer,Integer> square = x -> x * x;
+//        Function<Integer,Double> square = x -> Math.pow(x,2);
+//
+//        numbers.forEach(n -> System.out.println(square.apply(n)));
+          numbers.replaceAll(n -> n * 2);
+          numbers.forEach(System.out::println);
     }
 }
 
