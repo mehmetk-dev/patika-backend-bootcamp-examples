@@ -83,15 +83,6 @@ public class Main {
         service.listCostumer();
     }
 
-    public static boolean isThereId(int id){
-        for (Customer customer : service.getCustomerList()){
-            if (customer.getCustomer_Id() == id){
-                return true;
-            }
-        }
-        return false;
-    }
-
     public static void getAndUpdateCustomer(){
         System.out.println("Enter the id number you want to update");
         int id = scanner.nextInt();
