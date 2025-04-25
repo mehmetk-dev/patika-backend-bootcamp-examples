@@ -1,7 +1,6 @@
 package Hafta8.Proje;
 
 import java.io.*;
-import java.time.LocalDate;
 import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
 import java.util.*;
@@ -34,7 +33,7 @@ public class LogApp {
         }else{
             writeLog(LogLevel.INFO,"Kullanıcı giriş yaptı : "+ userName);
         }
-
+        
         int choise;
 
         do {
@@ -137,6 +136,8 @@ public class LogApp {
 
         } catch (IOException e) {
             System.out.println("Log yazılamadı : " + e.getMessage());
-        } ;
+        }
     }
+
+
 }
