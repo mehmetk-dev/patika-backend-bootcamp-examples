@@ -8,7 +8,7 @@ Bu repoda Patika.dev tarafından düzenlenen Backend Developer Bootcamp sürecin
 - Değişkenler, veri tipleri, operatörler
 - Karar yapıları (`if`, `switch`)
 - Döngüler (`for`, `while`, `do-while`)
-- [Kodlara Git »](./java/Hafta1)
+- [Kodlara Git »](./Hafta1)
 
 ---
 
