@@ -34,6 +34,7 @@ Bu repoda Patika.dev tarafından düzenlenen Backend Developer Bootcamp sürecin
 - [Kodlara Git »](./java/hafta4)
 
 ---
+
 ### ✅ Hafta 5: Java 8, Lambda ve Stream API
 - Lambda ifadeleriyle fonksiyonel programlama
 - Stream API ile veri işleme (filter, map, reduce vs.)
@@ -53,7 +54,7 @@ Bu repoda Patika.dev tarafından düzenlenen Backend Developer Bootcamp sürecin
 
 ---
 
-✅ Hafta 7: Exception Handling ve Try-With-Resources
+### ✅ Hafta 7: Exception Handling ve Try-With-Resources
 - Exception Handling: Hata yönetimi, try-catch blokları kullanımı
 - Custom Exceptions: Kendi özel exception'larını oluşturma
 - Try-With-Resources: Kaynak yönetimini daha kolay hale getiren Java özelliği
@@ -61,7 +62,7 @@ Bu repoda Patika.dev tarafından düzenlenen Backend Developer Bootcamp sürecin
   
 ---
 
-✅ Hafta 8: Java Input-Output (I/O) ve File İşlemleri
+### ✅ Hafta 8: Java Input-Output (I/O) ve File İşlemleri
 - BufferReader ile verileri okuma
 - File Path kullanımı ve dosya yoluyla işlemler
 - FileWriter ve BufferedWriter ile dosya yazma işlemleri
