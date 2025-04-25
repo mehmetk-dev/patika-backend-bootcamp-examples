@@ -16,7 +16,7 @@ Bu repoda Patika.dev tarafından düzenlenen Backend Developer Bootcamp sürecin
 - Tek boyutlu ve çok boyutlu diziler
 - Metot tanımlama ve kullanımı
 - Recursive fonksiyonlar
-- [Kodlara Git »](./Hafta2)
+- [Kodlara Git »](./java/hafta2)
 
 ---
 
@@ -24,14 +24,14 @@ Bu repoda Patika.dev tarafından düzenlenen Backend Developer Bootcamp sürecin
 - Class, object, constructor yapısı
 - Nesne tabanlı programlama temelleri
 - Basit sınıf bazlı projeler
-- [Kodlara Git »](./Hafta3)
+- [Kodlara Git »](./java/hafta3)
 
 ---
 
 ### ✅ Hafta 4: OOP İleri Seviye
 - Inheritance, polymorphism, encapsulation
 - Interface ve abstract class kullanımı
-- [Kodlara Git »](./Hafta4)
+- [Kodlara Git »](./java/hafta4)
 
 ---
 
@@ -39,7 +39,7 @@ Bu repoda Patika.dev tarafından düzenlenen Backend Developer Bootcamp sürecin
 - Maaş Hesaplama Uygulaması
 - Öğrenci Bilgi Sistemi
 - Kütüphane Yönetim Sistemi (OOP ile)
-- [Kodlara Git »](./Hafta5)
+- [Kodlara Git »](./java/hafta5)
 
 ---
 
@@ -47,7 +47,7 @@ Bu repoda Patika.dev tarafından düzenlenen Backend Developer Bootcamp sürecin
 - Spring Boot yapısı, bağımlılıklar
 - RESTful API geliştirme
 - PostgreSQL bağlantısı
-- [Kodlara Git »](./Hafta6)
+- [Kodlara Git »](./java/hafta6)
 
 ---
 
