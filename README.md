@@ -1,4 +1,3 @@
-aaaaaaaaaa
 # 📚 Patika.dev Backend Developer Bootcamp
 
 Bu repoda Patika.dev tarafından düzenlenen Backend Developer Bootcamp sürecinde Java ile geliştirdiğim projeler yer almaktadır. Her hafta farklı konular işlenmiş ve ilgili ödev/projelerle pekiştirilmiştir.
