@@ -84,4 +84,4 @@ Bu süreçte Java ve backend teknolojilerini etkin şekilde öğrenerek mikroser
 
 ## 👨‍💻 Geliştirici
 **Mehmet K.**  
-📫 [LinkedIn](https://linkedin.com/in/mehmetk-dev) | 🌐 [GitHub](https://github.com/mehmetk-dev)
+📫 [LinkedIn](https://linkedin.com/in/mehmet-kerem) | 🌐 [GitHub](https://github.com/mehmetk-dev)
