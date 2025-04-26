@@ -1,4 +1,4 @@
-package hafta2.oop.idmanprogramı;
+package hafta8.proje.trainingprogramlog;
 
 public class Idman {
 
@@ -15,20 +15,20 @@ public class Idman {
     }
 
     public void doExersize(String exersizetype,int repetitionCount){
-        if (exersizetype.equalsIgnoreCase("Push-up")){
-            doPushUp(repetitionCount);
-        }
-        else if(exersizetype.equalsIgnoreCase("Sit-up")){
-            doSitUp(repetitionCount);
-        }
-        else if(exersizetype.equalsIgnoreCase("Squat")){
-            doSquat(repetitionCount);
-        }
-        else if(exersizetype.equalsIgnoreCase("Pull-up")){
-            doPullUp(repetitionCount);
-        }else{
-            System.out.println("You entered the wrong value.");
-        }
+            if (exersizetype.equalsIgnoreCase("Push-up")){
+                doPushUp(repetitionCount);
+            }
+            else if(exersizetype.equalsIgnoreCase("Sit-up")){
+                doSitUp(repetitionCount);
+            }
+            else if(exersizetype.equalsIgnoreCase("Squat")){
+                doSquat(repetitionCount);
+            }
+            else if(exersizetype.equalsIgnoreCase("Pull-up")){
+                doPullUp(repetitionCount);
+            }else{
+                System.out.println("You entered the wrong value.");
+            }
     }
 
     public void doPushUp(int count) {
@@ -58,7 +58,7 @@ public class Idman {
             if (sitUpCount == 0) {
                 System.out.println("Your set is finished.");
             } else {
-                System.out.println("You have "+ sitUpCount +" sit-up left.");
+            System.out.println("You have "+ sitUpCount +" sit-up left.");
             }
         }
     }
