@@ -1,4 +1,4 @@
-package hafta8.Proje;
+package hafta8.proje;
 
 import java.io.*;
 import java.time.LocalDateTime;

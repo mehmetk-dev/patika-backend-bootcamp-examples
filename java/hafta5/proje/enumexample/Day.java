@@ -1,4 +1,4 @@
-package hafta5.proje.EnumExample;
+package hafta5.proje.enumexample;
 
 public enum Day {
 

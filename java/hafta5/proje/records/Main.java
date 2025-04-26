@@ -1,4 +1,4 @@
-package hafta5.proje.Records;
+package hafta5.proje.records;
 
 public class Main {
     public static void main(String[] args) {

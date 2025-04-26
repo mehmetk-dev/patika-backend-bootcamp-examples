@@ -1,4 +1,4 @@
-package hafta5.proje.EnumExample;
+package hafta5.proje.enumexample;
 
 import java.util.Scanner;
 

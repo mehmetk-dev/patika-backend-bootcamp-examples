@@ -1,4 +1,4 @@
-package hafta8.Proje;
+package hafta8.proje;
 
 public enum LogLevel {
     INFO,
