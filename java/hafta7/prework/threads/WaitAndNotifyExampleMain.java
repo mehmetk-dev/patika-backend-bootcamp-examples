@@ -36,5 +36,7 @@ public class WaitAndNotifyExampleMain {
 
         thread1.join();
         thread2.join();
+
+
     }
 }
