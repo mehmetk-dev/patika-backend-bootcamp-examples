@@ -25,12 +25,6 @@ public class CallableAndFuture {
            }
         });
         service.shutdown();
-        try {
-            System.out.println(future.get());
-        } catch (InterruptedException e) {
-            throw new RuntimeException(e);
-        } catch (ExecutionException e) {
-            throw new RuntimeException(e);
-        }
+
     }
 }
