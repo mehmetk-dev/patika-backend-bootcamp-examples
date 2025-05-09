@@ -22,7 +22,7 @@ public class BorrowDao {
 
     public void save(Borrow borrow){
         String sql = """
-                INSERT INTO borrows(members_id, book_id) VALUES(?,?)
+                INSERT INTO borrows(member_id, book_id) VALUES(?,?)
                 """;
 
         try(PreparedStatement preparedStatement = connection.prepareStatement(sql)) {
@@ -40,7 +40,7 @@ public class BorrowDao {
         String sql = """
                 SELECT br.id as borrow_id,
                 bo.id as book_id, 
-                bo.title as book_title, 
+                bo.name as book_title, 
                 au.id as author_id, 
                 au.name as author_name,
                 mb.name as member_name, 
@@ -49,7 +49,7 @@ public class BorrowDao {
                 JOIN books bo ON br.book_id = bo.id
                 JOIN authors au ON bo.author_id = au.id
                 JOIN members mb ON br.member_id = mb.id
-                WHERE m.id = ?
+                WHERE mb.id = ?
                 """;
 
         List<Borrow> borrows = new ArrayList<>();
@@ -80,5 +80,10 @@ public class BorrowDao {
         }
 
         return borrows;
+    }
+
+    public void saveALL(List<Borrow> borrows){
+
+        borrows.forEach(this::save);
     }
 }
