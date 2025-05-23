@@ -70,6 +70,28 @@ Bu repoda Patika.dev tarafından düzenlenen Backend Developer Bootcamp sürecin
 - Dosya kopyalama ve silme işlemleri
 - [Kodlara Git »](./java/hafta8)
 
+  ---
+
+### ✅ Hafta 9: Mağaza Projesi Yapımı
+- Ürün Yönetimi: Admin kullanıcıları, ürünleri ekleme, silme ve güncelleme işlemlerini terminal üzerinden kolayca gerçekleştirebilir.
+- Sepet İşlemleri: Müşteriler, mevcut ürünleri sepete ekleyebilir ve sepetlerini görüntüleyebilir.
+- Kullanıcı Yönetimi: Sisteme müşteri eklenebilir, müşteri girişi yapılabilir ve farklı kullanıcı türlerine göre erişim sağlanabilir.
+- Admin Paneli: Sadece admin yetkisine sahip kullanıcılar ürün ve kullanıcı yönetimi gibi işlemleri gerçekleştirebilir.
+- [Kodlara Git »](https://github.com/mehmetk-dev/Store_app)
+
+---
+
+### ✅ Hafta 10: Araç Kiralama Projesi Yapımı
+- Admin Paneli: Admin kullanıcıları araç ekleme, silme ve listeleme işlemlerinin yanı sıra tüm kiralama geçmişini görüntüleyebilir.
+- Müşteri İşlemleri: Kullanıcılar sisteme kaydolabilir, giriş yaparak araç kiralama, araç teslim etme , mevcut ve geçmiş kiralamalarını yönetme işlemlerini gerçekleştirebilir.
+- Araç Filtreleme: Araçlar kategoriye göre listelenebilir; kullanıcılar istedikleri araç türünü (Otomobil, Motorsiklet, Helikopter) kolayca bulabilir.
+- Durum Takibi: Sistemde yalnızca müsait (kiralanabilir) araçlar listelenir ve teslim edilen araçlar tekrar müsait hale gelir.
+- [Kodlara Git »](https://github.com/mehmetk-dev/Car_Rental)
+
+---
+
+### ✅ Hafta 11: İleri Seviye Git işlemleri ve Hibernate
+
 ## 🚀 Hedeflerim
 Bu süreçte Java ve backend teknolojilerini etkin şekilde öğrenerek mikroservis mimarisine geçiş yapmayı, Spring Boot projelerinde deneyim kazanmayı ve yazılım sektörüne sağlam bir giriş yapmayı hedefliyorum.
 
