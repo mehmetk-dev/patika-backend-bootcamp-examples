@@ -37,7 +37,6 @@ public class Student02 {
                 "id=" + id +
                 ", number=" + number +
                 ", name='" + name + '\'' +
-                ", computer=" + computer +
                 '}';
     }
 }
