@@ -29,11 +29,6 @@ public class Runner {
 
         List<Customer> adults = session.createQuery("FROM Customer WHERE age > 18", Customer.class).getResultList();
 
-        List<Customer> customers1 = session.createQuery("FROM Customer", Customer.class).getResultList();
-        for (Customer c : customers1) {
-            System.out.println(c.getName() + " - " + c.getEmail());
-        }
-
         Customer c = session.createQuery("FROM Customer WHERE email = :email", Customer.class)
                 .setParameter("email", "mehmetkerem")
                 .uniqueResult();
@@ -44,10 +39,7 @@ public class Runner {
         Long count = session.createQuery("SELECT COUNT(*) FROM Customer", Long.class).uniqueResult();
         System.out.println("Toplam müşteri: " + count);
 
-
         List<Customer> sorted = session.createQuery("FROM Customer ORDER BY age DESC", Customer.class).getResultList();
-
-
 
         session.createQuery("UPDATE Customer SET email = :newEmail WHERE name = :name")
                 .setParameter("newEmail", "yeniemail@example.com")
