@@ -20,20 +20,20 @@ public class DatabaseExample {
         String user = properties.getProperty("db.username");
         String password = properties.getProperty("db.password");
 
-        Connection connection = DriverManager.getConnection(url,user,password);
+        Connection connection = DriverManager.getConnection(url, user, password);
 
         Statement statement = connection.createStatement();
 
         ResultSet resultSet = statement.executeQuery("select * from employees");
 
-        while (resultSet.next()){
+        while (resultSet.next()) {
             int id = resultSet.getInt("employee_id");
             int department_id = resultSet.getInt("department_id");
             double salary = resultSet.getDouble("salary");
             String name = resultSet.getString("first_name");
             String lastName = resultSet.getString("last_name");
             String date = resultSet.getString("hire_date");
-            System.out.println(id + " "  + name + " " + lastName + " " + department_id + " " + salary + " " +date);
+            System.out.println(id + " " + name + " " + lastName + " " + department_id + " " + salary + " " + date);
         }
 
         System.out.println("Current working directory: " + System.getProperty("user.dir"));

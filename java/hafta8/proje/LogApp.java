@@ -7,13 +7,12 @@ import java.util.*;
 
 public class LogApp {
 
-    private static Set<String> USER_NAMES =  new HashSet<>();
+    private static Set<String> USER_NAMES = new HashSet<>();
     static Scanner scanner = new Scanner(System.in);
 
     private static File LOG_FILE = new File("C:\\Users\\Mehme\\IdeaProjects\\java-dersleri\\java\\Hafta8\\Proje\\log.txt");
 
     public static void main(String[] args) {
-
 
         USER_NAMES.add("Mehmet");
         USER_NAMES.add("Ali");
@@ -27,13 +26,13 @@ public class LogApp {
                 .filter(user -> user.equalsIgnoreCase(userName))
                 .findFirst();
 
-        if (optionalUserName.isEmpty()){
-            writeLog(LogLevel.ERROR,"Kullanıcı bulunamadı! " + userName);
+        if (optionalUserName.isEmpty()) {
+            writeLog(LogLevel.ERROR, "Kullanıcı bulunamadı! " + userName);
             System.out.println("Kullanıcı bulunamadı: " + userName);
-        }else{
-            writeLog(LogLevel.INFO,"Kullanıcı giriş yaptı : "+ userName);
+        } else {
+            writeLog(LogLevel.INFO, "Kullanıcı giriş yaptı : " + userName);
         }
-        
+
         int choise;
 
         do {
@@ -46,7 +45,7 @@ public class LogApp {
             choise = scanner.nextInt();
             scanner.nextLine();
 
-            switch (choise){
+            switch (choise) {
                 case 1:
                     searchLog(scanner);
                     break;
@@ -57,21 +56,21 @@ public class LogApp {
                     showLogFile();
                     break;
                 case 4:
-                    writeLog(LogLevel.INFO,"Uygulama Sonlandırıldı.");
+                    writeLog(LogLevel.INFO, "Uygulama Sonlandırıldı.");
                     System.out.println("Uygulamadan Çıkılıyor...");
                     continue;
                 default:
                     System.out.println("Geçersiz işlem tekrar deneyiniz.");
             }
-        }while (choise != 4);
+        } while (choise != 4);
     }
 
     private static void showLogFile() {
 
-        try(BufferedReader reader = new BufferedReader(new FileReader(LOG_FILE))) {
+        try (BufferedReader reader = new BufferedReader(new FileReader(LOG_FILE))) {
             String line;
 
-            while((line = reader.readLine()) != null){
+            while ((line = reader.readLine()) != null) {
                 System.out.println(line);
             }
 
@@ -84,13 +83,13 @@ public class LogApp {
 
         System.out.println("Log dosyasını silmek istiyorsanız 'evet' yazınız");
         String choise = scanner.nextLine();
-        if (choise.equalsIgnoreCase("evet")){
-            try(BufferedWriter writer = new BufferedWriter(new FileWriter(LOG_FILE))){
+        if (choise.equalsIgnoreCase("evet")) {
+            try (BufferedWriter writer = new BufferedWriter(new FileWriter(LOG_FILE))) {
                 writer.write("");
             } catch (IOException e) {
                 throw new RuntimeException(e);
             }
-        }else{
+        } else {
             System.out.println("Yanlış bir şey yazdınız.");
         }
     }
@@ -103,16 +102,16 @@ public class LogApp {
         String line;
         boolean isFound = false;
 
-        try(BufferedReader reader = new BufferedReader(new FileReader(LOG_FILE))) {
+        try (BufferedReader reader = new BufferedReader(new FileReader(LOG_FILE))) {
 
-            while((line = reader.readLine())  != null){
-                if (line.toUpperCase().contains(search.toUpperCase())){
+            while ((line = reader.readLine()) != null) {
+                if (line.toUpperCase().contains(search.toUpperCase())) {
                     System.out.println("Bulunan log ->" + line);
                     isFound = true;
                 }
             }
 
-            if (!isFound){
+            if (!isFound) {
                 System.out.println("Veri bulunamadı: " + search);
             }
 
@@ -125,11 +124,11 @@ public class LogApp {
 
     private static void writeLog(LogLevel logLevel, String message) {
 
-        try(BufferedWriter writer = new BufferedWriter(new FileWriter(LOG_FILE,true))) {
+        try (BufferedWriter writer = new BufferedWriter(new FileWriter(LOG_FILE, true))) {
 
             String formattedDate = LocalDateTime.now().format(DateTimeFormatter.ISO_LOCAL_DATE_TIME);
 
-            String log = String.format("[%s] [%s] [%s]",formattedDate,logLevel,message);
+            String log = String.format("[%s] [%s] [%s]", formattedDate, logLevel, message);
             writer.write(log);
             writer.newLine();
 

@@ -11,12 +11,12 @@ public class FileReaderMain {
 
         var file = new File("C:\\Users\\Mehme\\IdeaProjects\\java-dersleri\\java\\Hafta8\\Prework\\output.txt");
 
-        try(FileReader fr = new FileReader(file)) {
+        try (FileReader fr = new FileReader(file)) {
 
             int character;
 
-            while((character = fr.read()) != -1){
-                System.out.print((char)character);
+            while ((character = fr.read()) != -1) {
+                System.out.print((char) character);
             }
         } catch (FileNotFoundException e) {
             throw new RuntimeException(e);

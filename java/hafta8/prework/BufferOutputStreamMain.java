@@ -11,32 +11,32 @@ public class BufferOutputStreamMain {
 
 
         String content = """
-                BufferedInputStream ile yazılan data-BufferedInputStream ile yazılan data
-                BufferedInputStream ile yazılan data-BufferedInputStream ile yazılan data
-                BufferedInputStream ile yazılan data-BufferedInputStream ile yazılan data
-                BufferedInputStream ile yazılan data-BufferedInputStream ile yazılan data
-                BufferedInputStream ile yazılan data-BufferedInputStream ile yazılan data
-                BufferedInputStream ile yazılan data-BufferedInputStream ile yazılan data
-                BufferedInputStream ile yazılan data-BufferedInputStream ile yazılan data
-                BufferedInputStream ile yazılan data-BufferedInputStream ile yazılan data
-                BufferedInputStream ile yazılan data-BufferedInputStream ile yazılan data
-                BufferedInputStream ile yazılan data-BufferedInputStream ile yazılan data
-                BufferedInputStream ile yazılan data-BufferedInputStream ile yazılan data
-                BufferedInputStream ile yazılan data-BufferedInputStream ile yazılan data
-                BufferedInputStream ile yazılan data-BufferedInputStream ile yazılan data
-                BufferedInputStream ile yazılan data-BufferedInputStream ile yazılan data
-                BufferedInputStream ile yazılan data-BufferedInputStream ile yazılan data
-                BufferedInputStream ile yazılan data-BufferedInputStream ile yazılan data
-                BufferedInputStream ile yazılan data-BufferedInputStream ile yazılan data
-                BufferedInputStream ile yazılan data-BufferedInputStream ile yazılan data
-                BufferedInputStream ile yazılan data-BufferedInputStream ile yazılan data
-                BufferedInputStream ile yazılan data-BufferedInputStream ile yazılan data
-                BufferedInputStream ile yazılan data-BufferedInputStream ile yazılan data
-                BufferedInputStream ile yazılan data-BufferedInputStream ile yazılan data
-                BufferedInputStream ile yazılan data-BufferedInputStream ile yazılan data
-               """;
+                 BufferedInputStream ile yazılan data-BufferedInputStream ile yazılan data
+                 BufferedInputStream ile yazılan data-BufferedInputStream ile yazılan data
+                 BufferedInputStream ile yazılan data-BufferedInputStream ile yazılan data
+                 BufferedInputStream ile yazılan data-BufferedInputStream ile yazılan data
+                 BufferedInputStream ile yazılan data-BufferedInputStream ile yazılan data
+                 BufferedInputStream ile yazılan data-BufferedInputStream ile yazılan data
+                 BufferedInputStream ile yazılan data-BufferedInputStream ile yazılan data
+                 BufferedInputStream ile yazılan data-BufferedInputStream ile yazılan data
+                 BufferedInputStream ile yazılan data-BufferedInputStream ile yazılan data
+                 BufferedInputStream ile yazılan data-BufferedInputStream ile yazılan data
+                 BufferedInputStream ile yazılan data-BufferedInputStream ile yazılan data
+                 BufferedInputStream ile yazılan data-BufferedInputStream ile yazılan data
+                 BufferedInputStream ile yazılan data-BufferedInputStream ile yazılan data
+                 BufferedInputStream ile yazılan data-BufferedInputStream ile yazılan data
+                 BufferedInputStream ile yazılan data-BufferedInputStream ile yazılan data
+                 BufferedInputStream ile yazılan data-BufferedInputStream ile yazılan data
+                 BufferedInputStream ile yazılan data-BufferedInputStream ile yazılan data
+                 BufferedInputStream ile yazılan data-BufferedInputStream ile yazılan data
+                 BufferedInputStream ile yazılan data-BufferedInputStream ile yazılan data
+                 BufferedInputStream ile yazılan data-BufferedInputStream ile yazılan data
+                 BufferedInputStream ile yazılan data-BufferedInputStream ile yazılan data
+                 BufferedInputStream ile yazılan data-BufferedInputStream ile yazılan data
+                 BufferedInputStream ile yazılan data-BufferedInputStream ile yazılan data
+                """;
 
-        try(BufferedOutputStream bos = new BufferedOutputStream(new FileOutputStream("output.txt"))){
+        try (BufferedOutputStream bos = new BufferedOutputStream(new FileOutputStream("output.txt"))) {
 
             bos.write(content.getBytes());
             bos.flush();

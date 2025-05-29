@@ -29,33 +29,33 @@ public class Main {
         int pullUpCount = scanner.nextInt();
         scanner.nextLine();
 
-        Idman idman = new Idman(pushUpCount,sitUpCount,squatCount,pullUpCount);
+        Idman idman = new Idman(pushUpCount, sitUpCount, squatCount, pullUpCount);
         System.out.println("Training Starts...");
 
 
-        try(FileWriter fw = new FileWriter("idman.txt",true)){
+        try (FileWriter fw = new FileWriter("idman.txt", true)) {
             int count = 1;
             var date = LocalDateTime.now().format(DateTimeFormatter.ofPattern("yyyy-MM-dd HH:mm"));
-            fw.write("\n"+"Training Program - " + date + "\n");
+            fw.write("\n" + "Training Program - " + date + "\n");
             fw.write("Push-up: " + pushUpCount + " \n");
             fw.write("Sit-up: " + sitUpCount + " \n");
             fw.write("Squat: " + squatCount + " \n");
             fw.write("Pull-up: " + pullUpCount + " \n");
 
-            while (!idman.isTrainingOver()){
+            while (!idman.isTrainingOver()) {
 
-            System.out.println("Choose the exercise.(Push-up,Sit-up,Squat,Pull-up)");
-            String selectedExersize = scanner.nextLine();
+                System.out.println("Choose the exercise.(Push-up,Sit-up,Squat,Pull-up)");
+                String selectedExersize = scanner.nextLine();
 
-            System.out.println("Enter the number of " + selectedExersize + " repetitions.");
-            int repetiton = scanner.nextInt();
-            scanner.nextLine();
+                System.out.println("Enter the number of " + selectedExersize + " repetitions.");
+                int repetiton = scanner.nextInt();
+                scanner.nextLine();
 
-            idman.doExersize(selectedExersize,repetiton);
+                idman.doExersize(selectedExersize, repetiton);
 
-            fw.write("Process " + count++ + " ----------> " + selectedExersize + " : " + repetiton + "\n");
+                fw.write("Process " + count++ + " ----------> " + selectedExersize + " : " + repetiton + "\n");
 
-        }
+            }
             System.out.println("Your exercise is over thanks.");
         } catch (IOException e) {
             throw new RuntimeException(e);

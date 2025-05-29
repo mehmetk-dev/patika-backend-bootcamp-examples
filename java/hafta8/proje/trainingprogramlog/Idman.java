@@ -14,21 +14,18 @@ public class Idman {
         this.pullUpCount = pullUpCount;
     }
 
-    public void doExersize(String exersizetype,int repetitionCount){
-            if (exersizetype.equalsIgnoreCase("Push-up")){
-                doPushUp(repetitionCount);
-            }
-            else if(exersizetype.equalsIgnoreCase("Sit-up")){
-                doSitUp(repetitionCount);
-            }
-            else if(exersizetype.equalsIgnoreCase("Squat")){
-                doSquat(repetitionCount);
-            }
-            else if(exersizetype.equalsIgnoreCase("Pull-up")){
-                doPullUp(repetitionCount);
-            }else{
-                System.out.println("You entered the wrong value.");
-            }
+    public void doExersize(String exersizetype, int repetitionCount) {
+        if (exersizetype.equalsIgnoreCase("Push-up")) {
+            doPushUp(repetitionCount);
+        } else if (exersizetype.equalsIgnoreCase("Sit-up")) {
+            doSitUp(repetitionCount);
+        } else if (exersizetype.equalsIgnoreCase("Squat")) {
+            doSquat(repetitionCount);
+        } else if (exersizetype.equalsIgnoreCase("Pull-up")) {
+            doPullUp(repetitionCount);
+        } else {
+            System.out.println("You entered the wrong value.");
+        }
     }
 
     public void doPushUp(int count) {
@@ -47,18 +44,19 @@ public class Idman {
             }
         }
     }
-    public void doSitUp(int count){
-        if (count == 0){
+
+    public void doSitUp(int count) {
+        if (count == 0) {
             System.out.println("Your set is finished.");
         }
-        if (sitUpCount < count){
+        if (sitUpCount < count) {
             System.out.println("You did a lot of sit-up congratulations.");
-        } else{
+        } else {
             sitUpCount -= count;
             if (sitUpCount == 0) {
                 System.out.println("Your set is finished.");
             } else {
-            System.out.println("You have "+ sitUpCount +" sit-up left.");
+                System.out.println("You have " + sitUpCount + " sit-up left.");
             }
         }
     }
@@ -78,13 +76,14 @@ public class Idman {
             }
         }
     }
-    public void doPullUp(int count){
-        if (count == 0){
+
+    public void doPullUp(int count) {
+        if (count == 0) {
             System.out.println("Your set is finished.");
         }
-        if (pullUpCount < count){
+        if (pullUpCount < count) {
             System.out.println("You did a lot of pull-up congratulations.");
-        } else{
+        } else {
             pullUpCount -= count;
             if (pullUpCount == 0) {
                 System.out.println("Your set is finished.");
