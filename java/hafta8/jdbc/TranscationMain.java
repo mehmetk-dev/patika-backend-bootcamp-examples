@@ -25,16 +25,16 @@ public class TranscationMain {
             String user = properties.getProperty("db.username");
             String password = properties.getProperty("db.password");
 
-            connection = DriverManager.getConnection(url,user,password);
+            connection = DriverManager.getConnection(url, user, password);
 
             connection.setAutoCommit(false);
 
             PreparedStatement preparedStatement = connection.prepareStatement("update employees set salary = salary + 100 where employee_id = ?");
-            preparedStatement.setInt(1,1);
+            preparedStatement.setInt(1, 1);
             int row = preparedStatement.executeUpdate();
 
             PreparedStatement preparedStatement2 = connection.prepareStatement("update employees set salary = salary - 100 where employee_id = ?");
-            preparedStatement.setInt(1,2);
+            preparedStatement.setInt(1, 2);
             int row2 = preparedStatement.executeUpdate();
 
             connection.commit();
@@ -46,7 +46,7 @@ public class TranscationMain {
             } catch (SQLException ex) {
                 throw new RuntimeException(ex);
             }
-        }finally {
+        } finally {
             try {
                 if (connection != null) {
                     connection.close();

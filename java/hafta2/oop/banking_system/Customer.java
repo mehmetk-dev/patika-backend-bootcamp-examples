@@ -10,9 +10,9 @@ public class Customer {
     private int bankAccountCounter = 0;
 
     public Customer(String name, String surname, String password, String identity) {
-        if (password.length() < 8 || password.length() >= 12){
+        if (password.length() < 8 || password.length() >= 12) {
             System.out.println("Şifreniz 8 haneden uzun olmalıdır ve en fazla 12 haneli olabilir.");
-        }else{
+        } else {
             this.name = name;
             this.surname = surname;
             this.password = password;
@@ -22,17 +22,18 @@ public class Customer {
         }
     }
 
-    public void addAccount(BankAccount bankAccount){
-        if (bankAccountCounter < bankAccounts.length){
+    public void addAccount(BankAccount bankAccount) {
+        if (bankAccountCounter < bankAccounts.length) {
             bankAccounts[bankAccountCounter] = bankAccount;
             bankAccountCounter++;
             System.out.println("Yeni hesap eklendi " + bankAccount.getAccountNumber());
-        }else{
+        } else {
             System.out.println("Maksimum hesap limitine ulaşıldı.");
         }
     }
-    public void listAccount(){
-        for (BankAccount account: bankAccounts)
+
+    public void listAccount() {
+        for (BankAccount account : bankAccounts)
             System.out.println(account);
     }
 

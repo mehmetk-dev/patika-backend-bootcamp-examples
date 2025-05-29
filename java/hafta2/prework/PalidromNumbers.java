@@ -11,21 +11,21 @@ public class PalidromNumbers {
         System.out.println(palidromControl(num));
 
         for (int i = 0; i < 1000; i++) {
-            if (palidromControl(i)){
+            if (palidromControl(i)) {
                 System.out.println(i);
             }
         }
     }
 
-    public static boolean palidromControl(int n){
+    public static boolean palidromControl(int n) {
         int originalNum = n;
         int reservedNum = 0;
 
-        while (n>0){
+        while (n > 0) {
             int digit = n % 10;
             reservedNum = (reservedNum * 10) + digit;
             n /= 10;
         }
-       return reservedNum == originalNum;
+        return reservedNum == originalNum;
     }
 }

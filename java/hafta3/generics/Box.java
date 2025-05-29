@@ -4,10 +4,11 @@ public class Box<T> {
 
     private T content;
 
-    public T getContent(){
+    public T getContent() {
         return content;
     }
-    public void setContent(T content){
+
+    public void setContent(T content) {
         this.content = content;
     }
 }

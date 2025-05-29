@@ -17,10 +17,9 @@ public class ArtikYılHesaplama {
 
         Örneğin 1200, 1600, 2000 yılları artık yıldır ancak 1700, 1800 ve 1900 artık yıl değildir. */
 
-        if ((year % 4 == 0 && year % 100 != 0) || (year % 400 == 0) ){
+        if ((year % 4 == 0 && year % 100 != 0) || (year % 400 == 0)) {
             System.out.println(year + " Artık yıldır.");
-        }
-        else{
+        } else {
             System.out.println(year + " artık yıl değildir.");
         }
 

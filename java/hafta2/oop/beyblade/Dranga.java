@@ -1,9 +1,10 @@
 package hafta2.oop.beyblade;
 
-public class Dranga extends Beyblade{
+public class Dranga extends Beyblade {
 
     private String kutsalCanavar;
-    public Dranga(String beybladeci, int donusHizi, int saldiriGucu,String kutsalCanavar) {
+
+    public Dranga(String beybladeci, int donusHizi, int saldiriGucu, String kutsalCanavar) {
         super(beybladeci, donusHizi, saldiriGucu);
         this.kutsalCanavar = kutsalCanavar;
     }
@@ -11,7 +12,7 @@ public class Dranga extends Beyblade{
     @Override
     public void bilgileriGoster() {
         super.bilgileriGoster();
-        System.out.println("Kutsal Canavar ismi : "+ kutsalCanavar);
+        System.out.println("Kutsal Canavar ismi : " + kutsalCanavar);
     }
 
     @Override

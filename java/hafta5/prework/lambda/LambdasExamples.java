@@ -1,6 +1,6 @@
 package hafta5.prework.lambda;
 
-public class LambdasExamples{
+public class LambdasExamples {
 
     public static void main(String[] args) {
 
@@ -24,9 +24,6 @@ public class LambdasExamples{
             System.out.println(name);
         };
         greeting2.method("memo");
-
-
-
 
 
     }

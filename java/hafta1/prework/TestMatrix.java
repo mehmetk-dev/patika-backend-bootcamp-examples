@@ -1,6 +1,7 @@
 package hafta1.prework;
 
 import java.util.Scanner;
+
 public class TestMatrix {
     public static void main(String[] args) {
         int matrix[][] = new int[3][4];

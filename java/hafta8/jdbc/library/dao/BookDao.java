@@ -15,16 +15,16 @@ public class BookDao {
         this.connection = connection;
     }
 
-    public void save(Book book){
+    public void save(Book book) {
 
         String sql = """
                 INSERT INTO books(author_id,name) VALUES(?,?)
                 """;
 
-        try(PreparedStatement preparedStatement = connection.prepareStatement(sql)){
+        try (PreparedStatement preparedStatement = connection.prepareStatement(sql)) {
 
-            preparedStatement.setInt(1,book.getAuthor().getId());
-            preparedStatement.setString(2,book.getTitle());
+            preparedStatement.setInt(1, book.getAuthor().getId());
+            preparedStatement.setString(2, book.getTitle());
             preparedStatement.executeUpdate();
             System.out.println("Kayıt eklendi");
         } catch (SQLException e) {
@@ -32,7 +32,7 @@ public class BookDao {
         }
     }
 
-    public void saveAll(List<Book> books){
+    public void saveAll(List<Book> books) {
         books.forEach(this::save);
     }
 }

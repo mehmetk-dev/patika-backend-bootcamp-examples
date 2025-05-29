@@ -24,21 +24,21 @@ public class Coderbyte {
         boolean hasDigit = false;
         boolean hasSymbol = false;
 
-        if (str.toLowerCase().contains("password")){
+        if (str.toLowerCase().contains("password")) {
             return "false";
         }
 
-        if (str.length() <= 7 || str.length() >= 30){
+        if (str.length() <= 7 || str.length() >= 30) {
             return "false";
         }
 
-        for(int i = 0;i < str.length() ;i++){
+        for (int i = 0; i < str.length(); i++) {
             char c = str.charAt(i);
             if ((c >= 'A' && c <= 'Z')) {
                 hasUpperCase = true;
-            }else if (Character.isDigit(c)){
+            } else if (Character.isDigit(c)) {
                 hasDigit = true;
-            }else if (isSymbol(c)){
+            } else if (isSymbol(c)) {
                 hasSymbol = true;
             }
         }
@@ -49,12 +49,13 @@ public class Coderbyte {
             return "false";
         }
     }
+
     public static boolean isSymbol(char ch) {
         String symbols = "!@#$%^&*()-+=~`[]{}|\\:;\"'<>,.?/";
         return symbols.indexOf(ch) != -1;
     }
 
-    public static void main (String[] args) {
+    public static void main(String[] args) {
         // keep this function call here
         Scanner s = new Scanner(System.in);
         System.out.print(SimplePassword(s.nextLine()));

@@ -9,40 +9,42 @@ public class BookService {
     private ArrayList<Book> books = new ArrayList<>();
 
     // Method to add a new book to the library
-    public boolean addBook(String title,String author,String ISBN) {
+    public boolean addBook(String title, String author, String ISBN) {
 
-        Book book = new Book(title,author,ISBN);
-            if (isBookExists(ISBN)) {// Check if a book with the same ISBN already exists in the library
-                return false;// Return false if the book exists (duplicate ISBN)
-            }
+        Book book = new Book(title, author, ISBN);
+        if (isBookExists(ISBN)) {// Check if a book with the same ISBN already exists in the library
+            return false;// Return false if the book exists (duplicate ISBN)
+        }
         books.add(book);
         return true;// Return true if the book is added successfully
     }
-        // Method to list all books in the library
-        public void listBooks() {
 
-            if (books.isEmpty()) { // Check if the library is empty
-                System.out.println("No books found.");
-                return;
-            }
+    // Method to list all books in the library
+    public void listBooks() {
 
-            System.out.println("All books:");
-            System.out.println("--------------------");
-
-            // Iterate through each book and print its details
-            for (Book book : books) {
-                printBookInfo(book);// Call the method to print book details
-            }
+        if (books.isEmpty()) { // Check if the library is empty
+            System.out.println("No books found.");
+            return;
         }
+
+        System.out.println("All books:");
+        System.out.println("--------------------");
+
+        // Iterate through each book and print its details
+        for (Book book : books) {
+            printBookInfo(book);// Call the method to print book details
+        }
+    }
+
     // Method to search for a book by its title
-    public void searchBookByTitle(String title){
+    public void searchBookByTitle(String title) {
 
         boolean found = false; // Flag to check if any book is found
 
         // Iterate through each book to check if the title contains the search query
         for (Book book : books) {
-            if (book.getTitle().contains(title)){
-                if (!found){
+            if (book.getTitle().contains(title)) {
+                if (!found) {
                     System.out.println("Founded books:");
                     System.out.println("--------------------");
                     found = true;
@@ -51,7 +53,7 @@ public class BookService {
             }
         }
 
-        if (!found){ // If no book is found, print a message
+        if (!found) { // If no book is found, print a message
             System.out.println("Book not found.");
         }
     }
@@ -64,9 +66,9 @@ public class BookService {
         for (Book book : books) {
             if (book.getISBN().equals(isbn)) {
                 found = true;
-                if(!book.isAvaible()) { // Check if the book is already checked out
+                if (!book.isAvaible()) { // Check if the book is already checked out
                     System.out.println("Book is already checked out.");
-                }else {
+                } else {
                     book.setAvailable(false); // Mark the book as checked out
                     System.out.println("Book checked out successfully.");
                 }
@@ -75,7 +77,7 @@ public class BookService {
         }
 
         if (!found) {  // If the book is not found, print a message
-                System.out.println("Book not found.");
+            System.out.println("Book not found.");
         }
     }
 
@@ -88,9 +90,9 @@ public class BookService {
         for (Book book : books) {
             if (book.getISBN().equals(isbn)) {
                 found = true;
-                if (book.isAvaible()){ // If the book is already available, display a message
+                if (book.isAvaible()) { // If the book is already available, display a message
                     System.out.println("Book is already available.");
-                }else {
+                } else {
                     book.setAvailable(true); // Mark the book as available (returned)
                     System.out.println("Book returned successfully.");
                 }
@@ -113,8 +115,8 @@ public class BookService {
     }
 
     // Helper method to print the details of a book
-    public static void printBookInfo(Book book){
-        System.out.println("Title: "+ book.getTitle());
+    public static void printBookInfo(Book book) {
+        System.out.println("Title: " + book.getTitle());
         System.out.println("Author: " + book.getAuthor());
         System.out.println("ISBN: " + book.getISBN());
         System.out.println("Status: " + (book.isAvaible() ? "Available" : "Borrowed"));

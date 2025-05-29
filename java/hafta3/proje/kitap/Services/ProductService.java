@@ -13,18 +13,18 @@ public class ProductService {
 
     List<Product> products = new ArrayList<>();
 
-    public void createProduct(String name, double price,Author author,LocalDate releaseDate){
-        Product book = new Book(name,price,author,releaseDate);
+    public void createProduct(String name, double price, Author author, LocalDate releaseDate) {
+        Product book = new Book(name, price, author, releaseDate);
         products.add(book);
     }
 
-    public void createProduct(String name, double price){
-        Product magazine = new Magazine(name,price);
+    public void createProduct(String name, double price) {
+        Product magazine = new Magazine(name, price);
         products.add(magazine);
     }
 
-    public void listProducts(){
-        for (Product product : products){
+    public void listProducts() {
+        for (Product product : products) {
             System.out.println(product);
         }
     }
@@ -32,8 +32,8 @@ public class ProductService {
     public Product findProductByName(String productName) {
         Product foundProduct = null;
 
-        for (Product product : products){
-            if (product.getName().equals(productName)){
+        for (Product product : products) {
+            if (product.getName().equals(productName)) {
                 foundProduct = product;
                 break;
             }

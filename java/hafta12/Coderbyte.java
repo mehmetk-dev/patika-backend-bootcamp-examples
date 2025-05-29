@@ -10,7 +10,7 @@ public class Coderbyte {
 
     public static void main(String[] args) {
 
-        int[] array = {0,-2,-2,5,5,5};
+        int[] array = {0, -2, -2, 5, 5, 5};
 
         System.out.println(DistinctList(array));
     }
@@ -31,7 +31,6 @@ public class Coderbyte {
 //        }
 //        return count;
 //    }
-
 
 
     public static int DistinctList(int[] arr) {

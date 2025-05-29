@@ -31,7 +31,7 @@ public class House {
     }
 
     @Override
-    public String  toString() {
+    public String toString() {
         return "House{" +
                 "id=" + id +
                 ", alan=" + alan +

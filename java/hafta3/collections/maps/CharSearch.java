@@ -12,23 +12,23 @@ public class CharSearch {
         String word = scanner.nextLine().toLowerCase(); //Kullanıcıdan veri alınması ve küçük harflere dönüştürülmesi
 
         // TreeMap kullanıyoruz çünkü sıralama gereksinimimiz var
-        Map<Character,Integer> chars = new TreeMap<>();
+        Map<Character, Integer> chars = new TreeMap<>();
 
         for (int i = 0; i < word.length(); i++) {
             Integer tekrarSayisi = 0; // Her harf için sayaç sıfırlanıyor
 
             for (int j = 0; j < word.length(); j++) {
-                if (Character.isLetter(word.charAt(i))){ //Gelen karakter harf olup olmadığının kontrolü
+                if (Character.isLetter(word.charAt(i))) { //Gelen karakter harf olup olmadığının kontrolü
 
-                    if (word.charAt(i) == word.charAt(j)){ //Harf tekrarı kontrolü
+                    if (word.charAt(i) == word.charAt(j)) { //Harf tekrarı kontrolü
                         tekrarSayisi++;
                     }
-                    chars.put(word.charAt(i),tekrarSayisi);
+                    chars.put(word.charAt(i), tekrarSayisi);
                 }
             }
         }
         //Harfleri ve tekrarlarını ekrana yazdırma
-        for (Map.Entry<Character,Integer> entry : chars.entrySet()){
+        for (Map.Entry<Character, Integer> entry : chars.entrySet()) {
             System.out.println(entry.getKey() + " = " + entry.getValue());
         }
     }

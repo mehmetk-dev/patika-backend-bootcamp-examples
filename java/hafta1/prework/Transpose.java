@@ -3,9 +3,9 @@ package hafta1.prework;
 public class Transpose {
     public static void main(String[] args) {
 
-        int [][] numbers = {
-                {2,3,4},
-                {5,6,4}
+        int[][] numbers = {
+                {2, 3, 4},
+                {5, 6, 4}
         };
         int rows = numbers.length;  // Orijinal matrisin satır sayısı
         int cols = numbers[0].length; // Orijinal matrisin sütun sayısı

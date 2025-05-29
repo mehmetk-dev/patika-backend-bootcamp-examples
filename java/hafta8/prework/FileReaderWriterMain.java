@@ -9,13 +9,12 @@ public class FileReaderWriterMain {
 
     public static void main(String[] args) {
 
-
-        try(FileReader fr = new FileReader("writer.txt");
-            FileWriter fw = new FileWriter("writer2.txt");
-        ){
+        try (FileReader fr = new FileReader("writer.txt");
+             FileWriter fw = new FileWriter("writer2.txt");
+        ) {
             int character;
 
-            while((character = fr.read()) != -1){
+            while ((character = fr.read()) != -1) {
 
                 fw.write(character);
             }
@@ -25,6 +24,5 @@ public class FileReaderWriterMain {
         } catch (IOException e) {
             throw new RuntimeException(e);
         }
-
     }
 }

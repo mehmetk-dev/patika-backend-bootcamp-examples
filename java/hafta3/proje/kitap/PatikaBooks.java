@@ -17,20 +17,20 @@ public class PatikaBooks {
         userService.listUsers();
 
         AuthorService authorService = new AuthorService();
-        authorService.createAuthor("Mehmet","Kerem");
+        authorService.createAuthor("Mehmet", "Kerem");
         Author author = authorService.findAuthor("Mehmet");
 
         ProductService productService = new ProductService();
-        productService.createProduct("Java",100,author, LocalDate.of(2021,1,1));
-        productService.createProduct("Python",200,author, LocalDate.of(2021,1,1));
-        productService.createProduct("C++",300,author, LocalDate.of(2021,1,1));
-        productService.createProduct("Javas",100);
+        productService.createProduct("Java", 100, author, LocalDate.of(2021, 1, 1));
+        productService.createProduct("Python", 200, author, LocalDate.of(2021, 1, 1));
+        productService.createProduct("C++", 300, author, LocalDate.of(2021, 1, 1));
+        productService.createProduct("Javas", 100);
 
         OrderService orderService = new OrderService();
 
         Scanner scanner = new Scanner(System.in);
 
-        while (true){
+        while (true) {
 
 
             System.out.println("1.Müşteri Kaydı");
@@ -39,10 +39,10 @@ public class PatikaBooks {
             System.out.println("4.Ürünleri görüntüle");
             System.out.println("5.Çıkış.");
 
-            int choise =scanner.nextInt();
+            int choise = scanner.nextInt();
             scanner.nextLine();
 
-            switch (choise){
+            switch (choise) {
                 case 1:
                     System.out.println("Elektronik Mailinizi giriniz: ");
                     String email = scanner.nextLine();
@@ -50,7 +50,7 @@ public class PatikaBooks {
                     String name = scanner.nextLine();
                     System.out.println("Şifrenizi giriniz: ");
                     String password = scanner.nextLine();
-                    userService.createUser(name,email,password);
+                    userService.createUser(name, email, password);
                 case 2:
                     System.out.println("Müşteri email adersini giriniz:");
                     String email1 = scanner.nextLine();
@@ -58,7 +58,7 @@ public class PatikaBooks {
                     System.out.println("Ürün ismini giriniz:");
                     String productName = scanner.nextLine();
                     Product foundProductName = productService.findProductByName(productName);
-                    orderService.createOrder(List.of(foundProductName),foundEmail);
+                    orderService.createOrder(List.of(foundProductName), foundEmail);
                     break;
                 case 3:
                     System.out.println("Müşteri email adersini giriniz:");

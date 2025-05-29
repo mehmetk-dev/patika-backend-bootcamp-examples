@@ -20,14 +20,14 @@ public class BorrowDao {
         this.connection = connection;
     }
 
-    public void save(Borrow borrow){
+    public void save(Borrow borrow) {
         String sql = """
                 INSERT INTO borrows(member_id, book_id) VALUES(?,?)
                 """;
 
-        try(PreparedStatement preparedStatement = connection.prepareStatement(sql)) {
-            preparedStatement.setInt(1,borrow.getMember().getId());
-            preparedStatement.setInt(2,borrow.getBook().getId());
+        try (PreparedStatement preparedStatement = connection.prepareStatement(sql)) {
+            preparedStatement.setInt(1, borrow.getMember().getId());
+            preparedStatement.setInt(2, borrow.getBook().getId());
             preparedStatement.executeUpdate();
             System.out.println("Borrow Tablosuna kayıt edildi");
         } catch (SQLException e) {
@@ -35,7 +35,7 @@ public class BorrowDao {
         }
     }
 
-    public List<Borrow> getBorrowByMemberId(int memberId){
+    public List<Borrow> getBorrowByMemberId(int memberId) {
 
         String sql = """
                 SELECT br.id as borrow_id,
@@ -54,11 +54,11 @@ public class BorrowDao {
 
         List<Borrow> borrows = new ArrayList<>();
 
-        try(PreparedStatement preparedStatement = connection.prepareStatement(sql)){
-             preparedStatement.setInt(1,memberId);
-             ResultSet resultset = preparedStatement.executeQuery();
+        try (PreparedStatement preparedStatement = connection.prepareStatement(sql)) {
+            preparedStatement.setInt(1, memberId);
+            ResultSet resultset = preparedStatement.executeQuery();
 
-             while(resultset.next()){
+            while (resultset.next()) {
                 int borrowID = resultset.getInt("borrow_id");
                 int bookId = resultset.getInt("book_id");
                 String bookTitle = resultset.getString("book_title");
@@ -66,15 +66,15 @@ public class BorrowDao {
                 String authorName = resultset.getString("author_name");
                 String memberName = resultset.getString("member_name");
 
-                 Author author = new Author(authorId,authorName);
-                 Book book = new Book(bookId,bookTitle,author);
-                 Member member = new Member(memberId,memberName);
-                 Borrow borrow = new Borrow(member,book);
-                 borrow.setId(borrowID);
+                Author author = new Author(authorId, authorName);
+                Book book = new Book(bookId, bookTitle, author);
+                Member member = new Member(memberId, memberName);
+                Borrow borrow = new Borrow(member, book);
+                borrow.setId(borrowID);
 
-                 borrows.add(borrow);
+                borrows.add(borrow);
 
-             }
+            }
         } catch (SQLException e) {
             e.printStackTrace();
         }
@@ -82,7 +82,7 @@ public class BorrowDao {
         return borrows;
     }
 
-    public void saveALL(List<Borrow> borrows){
+    public void saveALL(List<Borrow> borrows) {
 
         borrows.forEach(this::save);
     }

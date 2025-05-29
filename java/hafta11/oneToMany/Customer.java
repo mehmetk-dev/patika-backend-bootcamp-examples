@@ -15,13 +15,13 @@ public class Customer {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    @Column(name = "customer_id",columnDefinition = "serial")
+    @Column(name = "customer_id", columnDefinition = "serial")
     private int id;
 
-    @Column(name = "customer_name",nullable = false,length = 100)
+    @Column(name = "customer_name", nullable = false, length = 100)
     private String name;
 
-    @Column(name = "customer_mail",nullable = false,unique = true)
+    @Column(name = "customer_mail", nullable = false, unique = true)
     private String mail;
 
     @Enumerated(EnumType.STRING)
@@ -32,7 +32,7 @@ public class Customer {
     @Column(name = "customer_on_date")
     private LocalDate onDate;
 
-    public enum GENDER{
+    public enum GENDER {
         MALE,
         FEMALE
     }

@@ -18,18 +18,17 @@ public class FileTest {
 
 
         File directory = new File("yeni klasör");
-        if (!directory.exists()){
-        boolean isCreated = directory.mkdir();
-        System.out.println("Klasör oluşturuldu mu : " + isCreated + " " + directory.getAbsolutePath());
-        directory.delete();
+        if (!directory.exists()) {
+            boolean isCreated = directory.mkdir();
+            System.out.println("Klasör oluşturuldu mu : " + isCreated + " " + directory.getAbsolutePath());
+            directory.delete();
         }
-
 
         System.out.println("---------------------------");
 
         var file = new File("C:\\Users\\Mehme\\IdeaProjects\\java-dersleri\\Hafta9\\Prework");
 
-        if(!file.exists()){
+        if (!file.exists()) {
             System.out.println(file.mkdir());
             System.out.println(file.getAbsolutePath());
             System.out.println(file.getParent());

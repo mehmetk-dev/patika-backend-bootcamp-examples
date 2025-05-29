@@ -9,10 +9,10 @@ public class DateAPI {
         System.out.println(LocalDate.now().plusMonths(1));
 
         LocalDate tarih2 = LocalDate.now();
-        var tarih = LocalDate.of(2050,11,24);
+        var tarih = LocalDate.of(2050, 11, 24);
         System.out.println(tarih);
 
-        var expireDate = LocalDate.of(2024,10,12);
+        var expireDate = LocalDate.of(2024, 10, 12);
 
         System.out.println(tarih2.isBefore(expireDate));
     }

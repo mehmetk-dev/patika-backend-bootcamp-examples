@@ -3,10 +3,11 @@ package hafta2.oop.başlangıç;
 public class Parent {
     String message = "Message FromParent";
 
-    public String getMessage(){
+    public String getMessage() {
         return getMessage();
     }
-    public Parent(String message){
+
+    public Parent(String message) {
         this.message = message;
     }
 }

@@ -14,7 +14,7 @@ public class ArrayList {
         buyList.add("Künhe alman tipi kornişon turşu");
 
 
-        for (String s:buyList){
+        for (String s : buyList) {
             System.out.println(s);
         }
         System.out.println(buyList);
@@ -27,7 +27,7 @@ public class ArrayList {
         System.out.println(buyList2.get(1));
         System.out.println(buyList2.indexOf("Meyveli yoğurt"));
 
-        System.out.println(buyList2.set(0,"Meyveli yoğurt"));
-        System.out.println(buyList2.subList(1,3));
+        System.out.println(buyList2.set(0, "Meyveli yoğurt"));
+        System.out.println(buyList2.subList(1, 3));
     }
 }

@@ -31,7 +31,7 @@ public class ManavProjesi {
         double toplam = (armut * armutKg) + (elma * elmaKg) + (domates * domatesKg) + (muz * muzKg) +
                 (patlıcan * patlıcanKg);
 
-        System.out.println("Toplam Fiyat : " + toplam  + " TL");
+        System.out.println("Toplam Fiyat : " + toplam + " TL");
 
 
     }

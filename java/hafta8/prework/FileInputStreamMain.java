@@ -9,7 +9,6 @@ public class FileInputStreamMain {
 
     public static void main(String[] args) throws IOException {
 
-
         File file = new File("C:\\Users\\Mehme\\IdeaProjects\\java-dersleri\\java\\Hafta8\\Prework\\veriler.txt");
         System.out.println(file.getAbsolutePath());
 
@@ -19,10 +18,8 @@ public class FileInputStreamMain {
 
         int bayt;
 
-        while ((bayt = fis.read()) != -1){
+        while ((bayt = fis.read()) != -1) {
             System.out.println((char) bayt + " - " + bayt);
         }
-
-
     }
 }

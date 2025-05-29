@@ -9,13 +9,13 @@ public class RunnerSave02 {
 
     public static void main(String[] args) {
 
-        Computer02 c1 = new Computer02(1L,"Casper","Excalibur");
-        Computer02 c2 = new Computer02(2L,"Monster","Abra");
-        Computer02 c3 = new Computer02(3L,"MSI","Gaming");
+        Computer02 c1 = new Computer02(1L, "Casper", "Excalibur");
+        Computer02 c2 = new Computer02(2L, "Monster", "Abra");
+        Computer02 c3 = new Computer02(3L, "MSI", "Gaming");
 
-        Student02 s1 = new Student02(1L,31,"Mehmet",c1);
-        Student02 s2 = new Student02(2L,32,"Murat",c2);
-        Student02 s3 = new Student02(3L,33,"Emre",c3);
+        Student02 s1 = new Student02(1L, 31, "Mehmet", c1);
+        Student02 s2 = new Student02(2L, 32, "Murat", c2);
+        Student02 s3 = new Student02(3L, 33, "Emre", c3);
 
         c1.setStudent02(s1);
         c2.setStudent02(s2);
@@ -37,9 +37,7 @@ public class RunnerSave02 {
         session.persist(s3);
 
 
-
-
         session.getTransaction().commit();
         session.close();
     }
-    }
+}

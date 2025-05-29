@@ -74,10 +74,10 @@ Filtrelenmiş filmleri ekrana yazdırın.*/
 
     @Override
     public String toString() {
-        return "IMDB Puanı: " + imdbRating +"| " +
-                "Film Adı: " + filmName +"| " +
-                "Film Türü: " + filmGenre +"| " +
-                "Yapım Yılı: " +  yearOfPublication;
+        return "IMDB Puanı: " + imdbRating + "| " +
+                "Film Adı: " + filmName + "| " +
+                "Film Türü: " + filmGenre + "| " +
+                "Yapım Yılı: " + yearOfPublication;
     }
 
     @Override
@@ -87,10 +87,10 @@ Filtrelenmiş filmleri ekrana yazdırın.*/
     }
 
     //Verilen String'e göre o türdeki filmleri döndüren metot
-    public static ArrayList<Film> filterByGenre(ArrayList<Film> films, String genre){
+    public static ArrayList<Film> filterByGenre(ArrayList<Film> films, String genre) {
         ArrayList<Film> filteredFilm = new ArrayList<>();
-        for (Film film : films){
-            if (film.getFilmGenre().equalsIgnoreCase(genre)){
+        for (Film film : films) {
+            if (film.getFilmGenre().equalsIgnoreCase(genre)) {
                 filteredFilm.add(film);
             }
         }

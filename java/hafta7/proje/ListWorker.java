@@ -6,13 +6,13 @@ import java.util.Random;
 
 public class ListWorker {
 
-        Random random = new Random();
+    Random random = new Random();
 
-        List<Integer> myList1 = new ArrayList<>();
-        List<Integer> myList2 = new ArrayList<>();
+    List<Integer> myList1 = new ArrayList<>();
+    List<Integer> myList2 = new ArrayList<>();
 
-        public Object lock1 = new Object();
-        public Object lock2 = new Object();
+    public Object lock1 = new Object();
+    public Object lock2 = new Object();
 
     public void addValueList1() throws InterruptedException {
 
@@ -20,7 +20,7 @@ public class ListWorker {
 //            myList1.add(i);
 //            Thread.sleep(1);
 //        }
-        synchronized (lock2){
+        synchronized (lock2) {
             myList1.add(random.nextInt());
         }
 
@@ -33,7 +33,7 @@ public class ListWorker {
 //            myList2.add(i);
 //            Thread.sleep(1);
 //        }
-        synchronized (lock2){
+        synchronized (lock2) {
             myList2.add(random.nextInt(100));
         }
     }
@@ -41,8 +41,8 @@ public class ListWorker {
     public void assignValue() throws InterruptedException {
 
         for (int i = 0; i < 1000; i++) {
-        addValueList1();
-        addValueList2();
+            addValueList1();
+            addValueList2();
         }
     }
 
@@ -60,7 +60,7 @@ public class ListWorker {
             }
         });
 
-        Thread thread2 =  new Thread(new Runnable() {
+        Thread thread2 = new Thread(new Runnable() {
             @Override
             public void run() {
                 try {
@@ -76,7 +76,7 @@ public class ListWorker {
         thread1.join();
         thread2.join();
 
-        long finish =  System.currentTimeMillis();
+        long finish = System.currentTimeMillis();
         System.out.println("List1 size = " + myList1.size() + " - List2 size = " + myList2.size());
         System.out.println("elapsed time = " + (finish - start));
 

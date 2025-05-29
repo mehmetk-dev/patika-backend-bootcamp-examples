@@ -14,9 +14,9 @@ public class GPU {
         this.operatingSystem = operatingSystem;
     }
 
-    public void installOperatingSystem(String operatingSystem){
+    public void installOperatingSystem(String operatingSystem) {
         this.operatingSystem = operatingSystem;
-        System.out.println("New operating system is install "+ operatingSystem);
+        System.out.println("New operating system is install " + operatingSystem);
     }
 
     public String getModel() {

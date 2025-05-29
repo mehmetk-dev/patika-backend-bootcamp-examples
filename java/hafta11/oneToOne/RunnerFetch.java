@@ -16,7 +16,7 @@ public class RunnerFetch {
         Session session = factory.openSession();
         session.beginTransaction();
 
-        Student student1 = session.get(Student.class,1L);
+        Student student1 = session.get(Student.class, 1L);
 
         session.getTransaction().commit();
         session.close();

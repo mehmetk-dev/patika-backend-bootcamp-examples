@@ -8,12 +8,12 @@ public class BufferInputStreamMain {
 
         File file = new File("C:\\Users\\Mehme\\IdeaProjects\\java-dersleri\\java\\Hafta8\\Prework\\veriler.txt");
 
-        try(BufferedInputStream bis = new BufferedInputStream(new FileInputStream(file))) {
+        try (BufferedInputStream bis = new BufferedInputStream(new FileInputStream(file))) {
 
             int data;
             int counter = 0;
 
-            while((data = bis.read()) != -1){
+            while ((data = bis.read()) != -1) {
                 counter++;
             }
             System.out.println("Toplam okunan byte sayısı: " + counter);
@@ -22,8 +22,8 @@ public class BufferInputStreamMain {
             throw new RuntimeException(e);
         } catch (IOException e) {
             throw new RuntimeException(e);
-        } ;
-
+        }
+        ;
 
 
     }

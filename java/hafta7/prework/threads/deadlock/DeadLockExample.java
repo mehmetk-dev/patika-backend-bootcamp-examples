@@ -13,20 +13,20 @@ public class DeadLockExample {
     private Lock lock1 = new ReentrantLock();
     private Lock lock2 = new ReentrantLock();
 
-    public void lockControl(Lock lock1,Lock lock2){
+    public void lockControl(Lock lock1, Lock lock2) {
 
-        boolean lock1_control =  false;
+        boolean lock1_control = false;
         boolean lock2_control = false;
 
-        while (true){
+        while (true) {
 
             lock1_control = lock1.tryLock();
             lock2_control = lock2.tryLock();
 
-            if (lock1_control == true && lock2_control == true){
+            if (lock1_control == true && lock2_control == true) {
                 return;
             }
-            if(lock1_control){
+            if (lock1_control) {
                 lock1.unlock();
             }
             if (lock2.tryLock()) {
@@ -37,10 +37,10 @@ public class DeadLockExample {
 
     public void thread1Function() {
 
-        lockControl(lock1,lock2);
+        lockControl(lock1, lock2);
 
         for (int i = 0; i < 5000; i++) {
-            Account.moneyTransfer(account1,account2,random.nextInt(100));
+            Account.moneyTransfer(account1, account2, random.nextInt(100));
         }
         lock2.unlock();
         lock1.unlock();
@@ -48,10 +48,10 @@ public class DeadLockExample {
 
     public void thread2Function() {
 
-        lockControl(lock1,lock2);
+        lockControl(lock1, lock2);
 
         for (int i = 0; i < 5000; i++) {
-            Account.moneyTransfer(account2,account1,random.nextInt(100));
+            Account.moneyTransfer(account2, account1, random.nextInt(100));
         }
 
         lock1.unlock();

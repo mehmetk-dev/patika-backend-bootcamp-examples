@@ -11,11 +11,12 @@ public class ReentrantLockExample {
     private Condition condition = lock.newCondition();
 
 
-    public void increase(){
+    public void increase() {
         for (int i = 0; i < 10000; i++) {
             say++;
         }
     }
+
     public void function1() {
 
         lock.lock();

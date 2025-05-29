@@ -9,9 +9,9 @@ public class IntermadiateExample {
 
 
         List<Student> student = List.of(
-                new Student("Mehmet",List.of(new Course("Matematik"))),
-                new Student("Burak",List.of(new Course("Türkçe"),new Course("Matematik"))),
-                new Student("Fatmagül",List.of(new Course("Psikoloji"), new Course("Matematik")))
+                new Student("Mehmet", List.of(new Course("Matematik"))),
+                new Student("Burak", List.of(new Course("Türkçe"), new Course("Matematik"))),
+                new Student("Fatmagül", List.of(new Course("Psikoloji"), new Course("Matematik")))
         );
 
         List<Course> matematik = student.stream()

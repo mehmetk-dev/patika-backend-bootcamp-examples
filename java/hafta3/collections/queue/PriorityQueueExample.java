@@ -1,4 +1,5 @@
 package hafta3.collections.queue;
+
 import java.util.PriorityQueue;
 
 public class PriorityQueueExample {

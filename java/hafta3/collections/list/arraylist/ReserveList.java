@@ -5,7 +5,7 @@ import java.util.ArrayList;
 
 public class ReserveList {
 
-        //Kolay: Kullanıcıdan alınan ArrayList<String> içindeki tüm elemanları tersten yazdıran bir program yaz.
+    //Kolay: Kullanıcıdan alınan ArrayList<String> içindeki tüm elemanları tersten yazdıran bir program yaz.
 
     public static void main(String[] args) {
 
@@ -22,7 +22,7 @@ public class ReserveList {
 
         System.out.println(nameList);
 
-        for (String names : nameList){
+        for (String names : nameList) {
             StringBuilder reserved = new StringBuilder(names);
             System.out.println(reserved.reverse());
         }

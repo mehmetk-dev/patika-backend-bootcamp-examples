@@ -13,7 +13,7 @@ public class CinZodyagi {
         //Çin zodyağı hesaplanırken kişinin doğum yılının 12 ile bölümünde kalana göre bulunur.
         int zodiac = dateOfBirth % 12;
 
-        String result = switch (zodiac){
+        String result = switch (zodiac) {
             case 0 -> "Maymun";
             case 1 -> "Horoz";
             case 2 -> "Köpek";
@@ -28,6 +28,6 @@ public class CinZodyagi {
             case 11 -> "Koyun";
             default -> "Geçersiz sayı girdiniz";
         };
-        System.out.println("Çin Zodyağı Burcunuz : "+ result);
+        System.out.println("Çin Zodyağı Burcunuz : " + result);
     }
 }

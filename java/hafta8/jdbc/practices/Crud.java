@@ -11,7 +11,7 @@ public class Crud {
 
         Connection connection = null;
 
-        try{
+        try {
             Class.forName("org.postgresql.Driver");
 
             Properties properties = new Properties();
@@ -22,11 +22,11 @@ public class Crud {
             String user = properties.getProperty("db.username");
             String password = properties.getProperty("db.password");
 
-            connection = DriverManager.getConnection(url,user,password);
+            connection = DriverManager.getConnection(url, user, password);
 
 
-            updateEmployee(connection,"mehmeeeet",1);
-            deleteEmployee(connection,1);
+            updateEmployee(connection, "mehmeeeet", 1);
+            deleteEmployee(connection, 1);
 
             readEmployees(connection);
         } catch (RuntimeException | IOException | ClassNotFoundException | SQLException e) {
@@ -41,9 +41,9 @@ public class Crud {
                 delete from employees where employee_id = ?;
                 """;
 
-        try(PreparedStatement preparedStatement = connection.prepareStatement(sql)) {
+        try (PreparedStatement preparedStatement = connection.prepareStatement(sql)) {
 
-            preparedStatement.setInt(1,id);
+            preparedStatement.setInt(1, id);
 
             preparedStatement.executeUpdate();
             System.out.println("Kullanıcı silindi.");
@@ -53,16 +53,16 @@ public class Crud {
         }
     }
 
-    private static void updateEmployee(Connection connection,String newName,int id) {
+    private static void updateEmployee(Connection connection, String newName, int id) {
 
         String sql = """
                         update employees set first_name = ? where employee_id = ?;
                 """;
 
-        try(PreparedStatement preparedStatement = connection.prepareStatement(sql)){
+        try (PreparedStatement preparedStatement = connection.prepareStatement(sql)) {
 
-            preparedStatement.setString(1,newName);
-            preparedStatement.setInt(2,id);
+            preparedStatement.setString(1, newName);
+            preparedStatement.setInt(2, id);
             preparedStatement.executeUpdate();
 
             System.out.println("Çalışan ismi " + newName + " olarak güncellendi.");
@@ -78,13 +78,13 @@ public class Crud {
                 select employee_id,first_name,d.department_name from employees e left join departments d on  e.department_id = d.department_id;
                 """;
 
-        try(Statement statement = connection.createStatement()){
+        try (Statement statement = connection.createStatement()) {
 
             ResultSet resultSet = statement.executeQuery(sql);
 
             System.out.println("Çalışan listesi");
 
-            while (resultSet.next()){
+            while (resultSet.next()) {
                 System.out.printf("ID: %d İsim: %s Departman: %s %n",
                         resultSet.getInt("employee_id"),
                         resultSet.getString("first_name"),

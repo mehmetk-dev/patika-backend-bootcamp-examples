@@ -7,14 +7,13 @@ public class Magazine extends Product {
         super(name, price);
     }
 
-        @Override
-        public String toString() {
-            return "Magazine{" +
-                    "name='" + name + '\'' +
-                    ", price=" + price +
-                    '}';
-        }
-
+    @Override
+    public String toString() {
+        return "Magazine{" +
+                "name='" + name + '\'' +
+                ", price=" + price +
+                '}';
+    }
 
 
 }

@@ -12,7 +12,7 @@ public class ProducerConsumer {
 
     public void produce() throws InterruptedException {
 
-        while(true){
+        while (true) {
             Thread.sleep(1000);
 
             Integer value = random.nextInt(100);
@@ -25,7 +25,7 @@ public class ProducerConsumer {
 
     public void consume() throws InterruptedException {
 
-        while(true) {
+        while (true) {
             Thread.sleep(5000);
             Integer value = queue.take();
             System.out.println("Consumer to consume: " + value);

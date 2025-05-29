@@ -11,21 +11,20 @@ public class NearestNumbers {
         System.out.println("10 adet pozitif ve benzersiz sayı giriniz");
 
         //Numbers listesinin 10 tane elemanı olana kadar döngü devam eder
-        while(numbers.size() < 10) {
+        while (numbers.size() < 10) {
             int num = scanner.nextInt();
-            if (num < 0 || numbers.contains(num)){
+            if (num < 0 || numbers.contains(num)) {
                 // Eğer sayı negatifse veya daha önceden girilmişse kabul edilmez
                 System.out.println("Yanlış sayı girişi");
-            }
-            else{
+            } else {
                 numbers.add(num);
-                System.out.println(numbers.size() +". Numara: " + num);
+                System.out.println(numbers.size() + ". Numara: " + num);
             }
         }
         findClosestPair(numbers);
     }
 
-    public static void findClosestPair(ArrayList<Integer> numbers){
+    public static void findClosestPair(ArrayList<Integer> numbers) {
         Collections.sort(numbers); // Numbers listesini sıralıyoruz.
 
         int minDifference = Integer.MAX_VALUE; // Farkı en başta en büyük alıyoruz ki diff değişkeni ne olursa olsun güncellesin diye.
@@ -42,9 +41,9 @@ public class NearestNumbers {
 //        }
         // Tüm eleman arasındaki farkı hesapla
         for (int i = 0; i < numbers.size(); i++) {
-            for (int j = i + 1; j <numbers.size() ; j++) {
-                int diff =  Math.abs(numbers.get(i) - numbers.get(j));
-                if (diff < minDifference){
+            for (int j = i + 1; j < numbers.size(); j++) {
+                int diff = Math.abs(numbers.get(i) - numbers.get(j));
+                if (diff < minDifference) {
                     minDifference = diff;
                     closestPairFirst = numbers.get(i);
                     closestPairSecond = numbers.get(j);

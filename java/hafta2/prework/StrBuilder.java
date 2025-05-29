@@ -6,7 +6,7 @@ public class StrBuilder {
         String name = "Mehmet";
         System.out.println(name);
 
-        name = name.replace("h","H");
+        name = name.replace("h", "H");
         System.out.println(name);
 
         StringBuilder str = new StringBuilder();
@@ -14,7 +14,7 @@ public class StrBuilder {
         str.append("Mehmet");
 
         StringBuilder alpabet = new StringBuilder();
-        for (char current = 'a'; current <= 'z';current++ ){
+        for (char current = 'a'; current <= 'z'; current++) {
             alpabet.append(current);
         }
         System.out.println(alpabet);

@@ -1,6 +1,6 @@
 package hafta7.proje;
 
-public class ExecuterServiceExample implements Runnable{
+public class ExecuterServiceExample implements Runnable {
 
     private String name;
     private int taskId;

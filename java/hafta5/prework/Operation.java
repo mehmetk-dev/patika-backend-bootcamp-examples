@@ -1,13 +1,13 @@
 package hafta5.prework;
 
 public enum Operation {
-    ADD{
+    ADD {
         @Override
         public int apply(int num1, int num2) {
             return num1 + num2;
         }
     },
-    SUBTRACT{
+    SUBTRACT {
         @Override
         public int apply(int num1, int num2) {
             return num1 - num2;
@@ -15,5 +15,5 @@ public enum Operation {
     };
 
 
-    public abstract int apply(int num1,int num2);
+    public abstract int apply(int num1, int num2);
 }

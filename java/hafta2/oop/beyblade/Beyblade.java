@@ -12,16 +12,17 @@ public class Beyblade {
         this.saldiriGucu = saldiriGucu;
     }
 
-    public void saldir(){
+    public void saldir() {
         System.out.println(beybladeci + " saldırıyor  hasarı : " + saldiriGucu + "dönme hızı " + donusHizi);
     }
-    public void bilgileriGoster(){
+
+    public void bilgileriGoster() {
         System.out.println("Beybladeci ismi: " + beybladeci);
         System.out.println("Saldırı Gücü: " + saldiriGucu);
         System.out.println("Dönüş Hızı: " + donusHizi);
     }
 
-    public void kutsalCanavarıCikar(){
+    public void kutsalCanavarıCikar() {
         System.out.println("Bu beyblade'nin kutsal Canavarınız Bulunmuyor.");
     }
 

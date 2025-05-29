@@ -13,7 +13,8 @@ public class Book {
         this.ISBN = ISBN;
         this.isAvaible = true;
     }
-    public Book(){
+
+    public Book() {
 
     }
 

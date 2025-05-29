@@ -16,7 +16,7 @@ public class RunnerFetch {
         Session session = factory.openSession();
         session.beginTransaction();
 
-        House h1 = session.get(House.class,2L);
+        House h1 = session.get(House.class, 2L);
         session.getTransaction().commit();
         session.close();
 

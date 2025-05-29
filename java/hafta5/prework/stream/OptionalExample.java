@@ -36,7 +36,7 @@ public class OptionalExample {
 
         //optionalEmpty.orElseThrow(() -> new NegativeArraySizeException("Hatalısın gardaşım"));
 
-        List<String> names = List.of("Ahmet","Mehmet","Burhan","Fatma");
+        List<String> names = List.of("Ahmet", "Mehmet", "Burhan", "Fatma");
         Optional<String> m = names.stream()
                 .filter(n -> n.startsWith("F"))
                 .findAny();

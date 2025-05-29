@@ -5,7 +5,7 @@ public class Main {
 
 
         ATM atm = new ATM();
-        Account acc = new Account("a","a",2000);
+        Account acc = new Account("a", "a", 2000);
 
         atm.work(acc);
         System.out.println("Programdan çıkılıyor...");

@@ -1,12 +1,13 @@
 package hafta2.oop.beyblade;
 
-public class Dragon extends Beyblade{
+public class Dragon extends Beyblade {
     private String kutsalCanavar;
     private String gizliYetenek;
-    public Dragon(String beybladeci, int donusHizi, int saldiriGucu, String kutsalCanavar,String gizliYetenek) {
+
+    public Dragon(String beybladeci, int donusHizi, int saldiriGucu, String kutsalCanavar, String gizliYetenek) {
         super(beybladeci, donusHizi, saldiriGucu);
         this.kutsalCanavar = kutsalCanavar;
-        this.gizliYetenek =  gizliYetenek;
+        this.gizliYetenek = gizliYetenek;
     }
 
     @Override
@@ -18,7 +19,7 @@ public class Dragon extends Beyblade{
     @Override
     public void bilgileriGoster() {
         super.bilgileriGoster();
-        System.out.println("Kutsal Canavar ismi : "+ kutsalCanavar);
-        System.out.println("Gizli Yetenek  : "+ gizliYetenek    );
+        System.out.println("Kutsal Canavar ismi : " + kutsalCanavar);
+        System.out.println("Gizli Yetenek  : " + gizliYetenek);
     }
 }

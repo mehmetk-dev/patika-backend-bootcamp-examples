@@ -7,15 +7,15 @@ public class Employee {
     private ContactInfo contactInfo;
 
     // Constructor to initialize employee's name and contact info
-    public Employee(String firstName, String lastName,String email,String phone) {
+    public Employee(String firstName, String lastName, String email, String phone) {
         this.firstName = firstName;
         this.lastName = lastName;
-        this.contactInfo = new ContactInfo(phone,email);
+        this.contactInfo = new ContactInfo(phone, email);
     }
 
 
     // Inner Class to store contact information
-    public class ContactInfo{
+    public class ContactInfo {
         private String phoneNumber;
         private String email;
 
@@ -26,21 +26,21 @@ public class Employee {
         }
 
         // Method to display contact information
-        public void displayInfo(){
+        public void displayInfo() {
             System.out.println("Phone: " + phoneNumber);
             System.out.println("Email: " + email);
         }
     }
 
     // Method to display employee's name and contact info
-    public void showContatInfo(){
+    public void showContatInfo() {
         System.out.println("Employee: " + firstName + " " + lastName);
         contactInfo.displayInfo();
     }
 
     // Main method to test the structure
     public static void main(String[] args) {
-        Employee emp = new Employee("Mehmet","Kerem","mehmetkerem@gmail.com","0555555555");
+        Employee emp = new Employee("Mehmet", "Kerem", "mehmetkerem@gmail.com", "0555555555");
         emp.showContatInfo();
     }
 

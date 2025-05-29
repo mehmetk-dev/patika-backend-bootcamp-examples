@@ -21,7 +21,7 @@ public class Computer02 {
     @OneToOne(mappedBy = "computer")
     private Student02 student02;
 
-    public Computer02(long id, String brand, String model,Student02 student02) {
+    public Computer02(long id, String brand, String model, Student02 student02) {
         this.id = id;
         this.brand = brand;
         this.model = model;

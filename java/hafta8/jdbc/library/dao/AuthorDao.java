@@ -15,15 +15,15 @@ public class AuthorDao {
         this.connection = connection;
     }
 
-    public void save(Author author){
+    public void save(Author author) {
 
         String sql = """
                 INSERT INTO authors(name) values(?)
                 """;
 
-        try(PreparedStatement preparedStatement = connection.prepareStatement(sql)) {
+        try (PreparedStatement preparedStatement = connection.prepareStatement(sql)) {
 
-            preparedStatement.setString(1,author.getName());
+            preparedStatement.setString(1, author.getName());
             preparedStatement.executeUpdate();
             System.out.println("Yazar eklendi.");
         } catch (SQLException e) {
@@ -31,7 +31,7 @@ public class AuthorDao {
         }
     }
 
-    public void saveAll(List<Author> authors){
+    public void saveAll(List<Author> authors) {
 
         authors.forEach(this::save);
     }

@@ -17,19 +17,19 @@ public class Student {
         this.studentNo = studentNo;
     }
 
-    public void addCourse(Course course,int index){
-        if (index>=0 && index <courses.length){
+    public void addCourse(Course course, int index) {
+        if (index >= 0 && index < courses.length) {
             courses[index] = course;
-        }else {
+        } else {
             System.out.println("Maximum ders sayısını aştınız.");
         }
     }
 
-    public void addNote(Course course,int note){
-        for (Course c1: getCourse()){
-            if (c1.getName().equals(course.getName())){
+    public void addNote(Course course, int note) {
+        for (Course c1 : getCourse()) {
+            if (c1.getName().equals(course.getName())) {
                 c1.setNote(note);
-                System.out.println(c1.getName() + " dersi için notunuz "+ note + " girilmiştir.");
+                System.out.println(c1.getName() + " dersi için notunuz " + note + " girilmiştir.");
                 break;
             }
         }

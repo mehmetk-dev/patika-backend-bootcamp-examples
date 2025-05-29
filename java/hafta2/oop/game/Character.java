@@ -12,12 +12,13 @@ public class Character {
         this.attackDamage = attackDamage;
     }
 
-    public void attack(){
+    public void attack() {
         System.out.println(name + " karakteri atak yapıyor " + attackDamage + " hasar verdi.");
     }
-    public void getStatus(){
+
+    public void getStatus() {
         System.out.println("-------------------------");
-        System.out.println("Karakter "+ name);
+        System.out.println("Karakter " + name);
         System.out.println("Canı " + health);
         System.out.println("Hasarı " + attackDamage);
         System.out.println("-------------------------");

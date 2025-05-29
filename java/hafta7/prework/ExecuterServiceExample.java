@@ -7,7 +7,6 @@ public class ExecuterServiceExample {
 
     public static void main(String[] args) {
 
-
         ExecutorService executorService = new ForkJoinPool();
     }
 }

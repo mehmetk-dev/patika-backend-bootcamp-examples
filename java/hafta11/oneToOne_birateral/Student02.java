@@ -15,7 +15,7 @@ public class Student02 {
     @Id
     private long id;
     private int number;
-    private String  name;
+    private String name;
 
     @OneToOne
     @JoinColumn

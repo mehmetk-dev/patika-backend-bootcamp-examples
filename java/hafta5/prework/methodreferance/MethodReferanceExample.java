@@ -18,8 +18,8 @@ public class MethodReferanceExample {
 
         // 1: Static method referance -> Classname::methodName
 
-        BiFunction<Integer,Integer,Integer> sum = MathOperations::sum;
-        System.out.println("Toplam" + sum.apply(1,6));
+        BiFunction<Integer, Integer, Integer> sum = MathOperations::sum;
+        System.out.println("Toplam" + sum.apply(1, 6));
 
         // 2: Instance method referance (Object)-> objectReferance:: instanceMethod
 
@@ -29,7 +29,7 @@ public class MethodReferanceExample {
 
         // 3: Instance method referance (Class)-> ClassName::methodName
 
-        List<String> myList = Arrays.asList("merhaba","ben","benim");
+        List<String> myList = Arrays.asList("merhaba", "ben", "benim");
         myList.forEach(System.out::println);
 
         // 4: Constructor method referance -> ClassName::new

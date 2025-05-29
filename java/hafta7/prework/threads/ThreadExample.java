@@ -1,6 +1,6 @@
 package hafta7.prework.threads;
 
-public class ThreadExample  {
+public class ThreadExample {
 
     public static void main(String[] args) {
 

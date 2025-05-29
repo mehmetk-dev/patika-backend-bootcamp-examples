@@ -13,19 +13,21 @@ public class OrderService {
     private static List<Order> orderList = new ArrayList<>();
 
 
-    public void createOrder(List<Product> productList, User user){
+    public void createOrder(List<Product> productList, User user) {
 
-        Order order = new Order(productList,user);
+        Order order = new Order(productList, user);
         orderList.add(order);
     }
-    public void listOrders(){
-        for (Order order : orderList){
+
+    public void listOrders() {
+        for (Order order : orderList) {
             System.out.println(order);
         }
     }
-    public void listOrdersByEmail(User email){
-        for (Order order: orderList){
-            if (order.getUser().getEmail().equals(email)){
+
+    public void listOrdersByEmail(User email) {
+        for (Order order : orderList) {
+            if (order.getUser().getEmail().equals(email)) {
                 System.out.println(order);
             }
         }

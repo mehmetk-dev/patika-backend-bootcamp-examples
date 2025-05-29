@@ -13,7 +13,7 @@ public class Student {
     @Id
     private long id;
     private int number;
-    private String  name;
+    private String name;
 
     @OneToOne
     private Computer computer;

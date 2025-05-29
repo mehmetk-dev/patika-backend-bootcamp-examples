@@ -9,12 +9,12 @@ public class BankingSystem {
     public static void main(String[] args) {
 
 
-        Customer customer = new Customer("Mehmet","Kerem","mehmet619","12118421202");
+        Customer customer = new Customer("Mehmet", "Kerem", "mehmet619", "12118421202");
         customers[0] = customer;
         menu();
     }
 
-    public static void menu(){
+    public static void menu() {
 
         Scanner sc = new Scanner(System.in);
 
@@ -26,20 +26,20 @@ public class BankingSystem {
 
             choise = sc.nextInt();
 
-            switch (choise){
+            switch (choise) {
                 case 1:
                     createBankAccount(sc);
                     break;
 
                 case 2:
-                   customers[0].listAccount();
-                   break;
+                    customers[0].listAccount();
+                    break;
 
                 case 3:
                     customers[0].listAccount();
                     System.out.println("İşlem yapmak istediniz hesabı seçiniz");
                     int selectedIndex = sc.nextInt();
-                    selectedIndex -=1;
+                    selectedIndex -= 1;
                     BankAccount selectedAccount = customers[0].getBankAccounts()[selectedIndex];
 
                     int subChoise;
@@ -53,10 +53,10 @@ public class BankingSystem {
 
                         subChoise = sc.nextInt();
 
-                        switch (subChoise){
+                        switch (subChoise) {
                             case 1:
-                                System.out.println(selectedAccount.getAccountNumber() + " " +selectedAccount.getBalance()
-                                        + " " +selectedAccount.getCurrencyType().getSymbol());
+                                System.out.println(selectedAccount.getAccountNumber() + " " + selectedAccount.getBalance()
+                                        + " " + selectedAccount.getCurrencyType().getSymbol());
                                 break;
                             case 2:
                                 System.out.println("Ne kadar para yatırmak istiyorsunuz");
@@ -72,7 +72,7 @@ public class BankingSystem {
                                 System.out.println("Ana menüye Dönüyorsunuz");
                                 break;
                         }
-                    }while(subChoise != 0);
+                    } while (subChoise != 0);
                     break;
 
 
@@ -83,7 +83,7 @@ public class BankingSystem {
                 default:
                     System.out.println("Geçersiz işlem");
             }
-        }while(choise !=4);
+        } while (choise != 4);
 
         System.out.println("Çıkış yaptınız");
     }
@@ -102,7 +102,7 @@ public class BankingSystem {
         double amount = sc.nextDouble();
         System.out.println("Para Birimini Seçiniz 1-TL | 2-DOLAR | 3-EURO | 4-ALTIN");
         int currency = sc.nextInt();
-        CurrencyType currencyType =switch (currency){
+        CurrencyType currencyType = switch (currency) {
             case 1 -> CurrencyType.TL;
             case 2 -> CurrencyType.DOLAR;
             case 3 -> CurrencyType.EURO;
@@ -113,28 +113,28 @@ public class BankingSystem {
             }
         };
         String customerName = customers[0].getName();
-        String accountNumber = customerName.charAt(0) + "-"+ customerName.length()+ "" + currency;
+        String accountNumber = customerName.charAt(0) + "-" + customerName.length() + "" + currency;
 
-        BankAccount bankAccount = new BankAccount(currencyType,amount,accountNumber);
+        BankAccount bankAccount = new BankAccount(currencyType, amount, accountNumber);
 
         customers[0].addAccount(bankAccount);
     }
 
     private static void validatePassword(Scanner sc) {
         System.out.println("Merhaba " + customers[0].getName());
-        int wrongPasswordCounter=0;
+        int wrongPasswordCounter = 0;
 
         do {
             System.out.println("Şifrenizi Giriniz");
             String password = sc.nextLine();
 
-            if (!password.equals(customers[0].getPassword())){
+            if (!password.equals(customers[0].getPassword())) {
                 System.out.println("Yanlış şifre girdiniz");
                 wrongPasswordCounter++;
-            }else{
+            } else {
                 System.out.println("Şifrenizi doğru girddiniz bankacılık menüsüne aktarılıyorsunuz");
                 break;
             }
-        }while(wrongPasswordCounter<4);
+        } while (wrongPasswordCounter < 4);
     }
 }

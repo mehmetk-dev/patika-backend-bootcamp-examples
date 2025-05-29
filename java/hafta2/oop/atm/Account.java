@@ -12,15 +12,15 @@ public class Account {
         this.balance = balance;
     }
 
-    public void deposit(int amount){
+    public void deposit(int amount) {
         balance += amount;
-        System.out.println(amount + " TL yatırıldı. Yeni bakiyeniz: "+ balance);
+        System.out.println(amount + " TL yatırıldı. Yeni bakiyeniz: " + balance);
     }
 
-    public void withDraw(int amount){
-        if (balance<amount){
+    public void withDraw(int amount) {
+        if (balance < amount) {
             System.out.println("Yeterli bakiyeniz yok.");
-        }else{
+        } else {
             balance -= amount;
             System.out.println(amount + " TL eklendi. Yeni bakiye: " + balance);
         }

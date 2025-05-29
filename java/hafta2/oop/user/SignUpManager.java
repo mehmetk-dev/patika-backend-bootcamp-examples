@@ -8,12 +8,12 @@ public class SignUpManager {
         this.iUserCheckService = iUserCheckService;
     }
 
-    public void signUp(User user){
+    public void signUp(User user) {
 
 
-        if (iUserCheckService.checkUser(user)){
+        if (iUserCheckService.checkUser(user)) {
             System.out.println("Kullanıcı kayıt oldu : " + user.getName());
-        } else{
+        } else {
             System.out.println("Kullanıcı kayıt olamadı...");
         }
 

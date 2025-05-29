@@ -7,10 +7,10 @@ public class CalculatorTest {
 
     public static void main(String[] args) {
 
-        Calculator addition = (a,b) -> a + b;
-        Calculator subtraction = (a,b) -> a - b;
-        Calculator multiplication = (a,b) -> a * b;
-        Calculator division = (a,b) -> {
+        Calculator addition = (a, b) -> a + b;
+        Calculator subtraction = (a, b) -> a - b;
+        Calculator multiplication = (a, b) -> a * b;
+        Calculator division = (a, b) -> {
             if (b == 0) throw new ArithmeticException("Cannot divide by zero");
             return a / b;
         };
@@ -31,18 +31,18 @@ public class CalculatorTest {
 
         double result = 0;
 
-        switch (choise){
+        switch (choise) {
             case "+":
-                result = addition.numbers(num1,num2);
+                result = addition.numbers(num1, num2);
                 break;
             case "-":
-                result = subtraction.numbers(num1,num2);
+                result = subtraction.numbers(num1, num2);
                 break;
             case "*":
-                result = multiplication.numbers(num1,num2);
+                result = multiplication.numbers(num1, num2);
                 break;
             case "/":
-                result = division.numbers(num1,num2);
+                result = division.numbers(num1, num2);
                 break;
             default:
                 System.out.println(choise);

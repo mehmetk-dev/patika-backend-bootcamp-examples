@@ -21,29 +21,30 @@ public class UcakBiletiProgrami {
             System.out.println("Hatalı Veri Girdiniz");
         } else {
             //KM Başına ücret hesaplaması
-        double price = distance * 0.10;
-        double discount;
+            double price = distance * 0.10;
+            double discount;
 
-        //Yaş Kontrolü
-        if (age<12){
-            //Kişi 12 yaşından küçükse bilet fiyatı üzerinden %50 indirim uygulanır.
-            discount = price * 0.50;
-            price = price - discount;
-        } else if(age >= 12 &&  age < 24){
-            //Kişi 12-24 yaşları arasında ise bilet fiyatı üzerinden %10 indirim uygulanır.
-            discount = price * 0.10;
-            price = price - discount;
-        } else if(age > 65){
-            //Kişi 65 yaşından büyük ise bilet fiyatı üzerinden %30 indirim uygulanır.
-            discount = price * 0.30;
-            price = price - discount; }
-        // Bilet Tipi kontrolü
-        if (type == 2){
-            // Kişi "Yolculuk Tipini" gidiş dönüş seçmiş ise bilet fiyatı üzerinden %20 indirim uygulanır.
-            price *= 1.6;
-        }
-        //Toplam tutarı yazdırma
-        System.out.println("Toplam Tutar : " + price);
+            //Yaş Kontrolü
+            if (age < 12) {
+                //Kişi 12 yaşından küçükse bilet fiyatı üzerinden %50 indirim uygulanır.
+                discount = price * 0.50;
+                price = price - discount;
+            } else if (age >= 12 && age < 24) {
+                //Kişi 12-24 yaşları arasında ise bilet fiyatı üzerinden %10 indirim uygulanır.
+                discount = price * 0.10;
+                price = price - discount;
+            } else if (age > 65) {
+                //Kişi 65 yaşından büyük ise bilet fiyatı üzerinden %30 indirim uygulanır.
+                discount = price * 0.30;
+                price = price - discount;
+            }
+            // Bilet Tipi kontrolü
+            if (type == 2) {
+                // Kişi "Yolculuk Tipini" gidiş dönüş seçmiş ise bilet fiyatı üzerinden %20 indirim uygulanır.
+                price *= 1.6;
+            }
+            //Toplam tutarı yazdırma
+            System.out.println("Toplam Tutar : " + price);
         }
     }
 }

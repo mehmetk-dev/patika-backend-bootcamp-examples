@@ -38,7 +38,7 @@ public class ATM {
             System.out.println("Çıkmak için 'q' ya basınız");
             System.out.println("************************");
 
-             // Kullanıcı giriş yapıyor
+            // Kullanıcı giriş yapıyor
 
             while (true) {
                 System.out.println("İşlem seçiniz");

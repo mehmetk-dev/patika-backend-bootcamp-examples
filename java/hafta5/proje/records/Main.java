@@ -4,9 +4,9 @@ public class Main {
     public static void main(String[] args) {
 
         // Creating student objects
-        Student student1 = new Student("mehmet","kerem",123);
-        Student student2 = new Student("enes","duman",124);
-        Student student3 = new Student("emre","ömür",125);
+        Student student1 = new Student("mehmet", "kerem", 123);
+        Student student2 = new Student("enes", "duman", 124);
+        Student student3 = new Student("emre", "ömür", 125);
 
         // Printing student information to the console
         System.out.println(student1);

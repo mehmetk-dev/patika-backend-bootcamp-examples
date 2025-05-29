@@ -2,11 +2,11 @@ package hafta3.proje.kitap.Model;
 
 import java.time.LocalDate;
 
-public class Book extends Product{
+public class Book extends Product {
     public Author author;
     private LocalDate publishDate;
 
-    public Book(String name, double price,Author author,LocalDate publishDate) {
+    public Book(String name, double price, Author author, LocalDate publishDate) {
         super(name, price);
         this.author = author;
         this.publishDate = publishDate;
@@ -24,6 +24,6 @@ public class Book extends Product{
     public String toString() {
         return "Kitap: " + author +
                 ",Kitap adı: '" + name + '\'' +
-                ",Fiyat: " + price ;
+                ",Fiyat: " + price;
     }
 }

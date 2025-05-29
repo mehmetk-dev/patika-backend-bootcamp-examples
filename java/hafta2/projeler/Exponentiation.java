@@ -11,15 +11,17 @@ public class Exponentiation {
         System.out.println("Üssünü Giriniz: ");
         int exponent = scan.nextInt();
 
-        System.out.println(powerCalculate(base,exponent));
+        System.out.println(powerCalculate(base, exponent));
     }
-    public static int powerCalculate(int num,int pow){
+
+    public static int powerCalculate(int num, int pow) {
         if (pow == 1) return num;
         if (pow == 0 || num == 1) return 1;
 
-        return num * powerCalculate(num,pow-1);
+        return num * powerCalculate(num, pow - 1);
     }
-    public void pow(int i){
+
+    public void pow(int i) {
         System.out.println(i);
     }
 }

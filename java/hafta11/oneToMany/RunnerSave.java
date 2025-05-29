@@ -21,7 +21,6 @@ public class RunnerSave {
         h2.getRooms().add(r3);
         h2.getRooms().add(r4);
 
-
         SessionFactory factory = new Configuration().configure("hibernate.cfg.xml")
                 .addAnnotatedClass(House.class)
                 .addAnnotatedClass(Room.class)
@@ -36,7 +35,6 @@ public class RunnerSave {
         session.persist(r2);
         session.persist(r3);
         session.persist(r4);
-
 
 
         session.getTransaction().commit();

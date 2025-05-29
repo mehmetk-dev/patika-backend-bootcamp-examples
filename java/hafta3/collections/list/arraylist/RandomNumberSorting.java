@@ -11,7 +11,7 @@ public class RandomNumberSorting {
         Random rand = new Random();
 
         for (int i = 0; i < 10; i++) {
-            numbers.add(rand.nextInt(10,100));
+            numbers.add(rand.nextInt(10, 100));
         }
         System.out.println("Original List");
         System.out.println(numbers);

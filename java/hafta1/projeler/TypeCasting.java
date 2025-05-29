@@ -11,7 +11,7 @@ public class TypeCasting {
         double decimalNum = scanner.nextDouble();
 
         // Integerden double'a dönüştürüyoruz
-        System.out.println("Girdiğiniz tam sayının ( " + num + " ) ondalıklı şekli: " + (double) num );
+        System.out.println("Girdiğiniz tam sayının ( " + num + " ) ondalıklı şekli: " + (double) num);
 
         // double'dan integer'a dönüştürüyoruz
         System.out.println("Girdiğinniz ondalıklı sayının ( " + decimalNum + " ) tam sayı şekli: " + (int) decimalNum);

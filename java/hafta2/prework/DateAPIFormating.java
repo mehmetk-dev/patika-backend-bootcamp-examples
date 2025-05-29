@@ -16,7 +16,7 @@ public class DateAPIFormating {
         String date = "11/03/2026";
 
         DateTimeFormatter formatterr = DateTimeFormatter.ofPattern("dd/MM/yyyy");
-        LocalDate localdaste = LocalDate.parse(date,formatterr);
+        LocalDate localdaste = LocalDate.parse(date, formatterr);
 
         System.out.println(localdaste.format(DateTimeFormatter.ofPattern("dd/MM/yy")));
     }

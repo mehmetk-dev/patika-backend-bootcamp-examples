@@ -11,7 +11,7 @@ public class Order {
     private Customer customer;
 
 
-    public Order(String product, double price, String paymentStatus,Customer customer) {
+    public Order(String product, double price, String paymentStatus, Customer customer) {
         this.product = product;
         this.price = price;
         this.paymentStatus = paymentStatus;

@@ -1,6 +1,6 @@
 package hafta2.oop.game;
 
-public class Mage extends Character{
+public class Mage extends Character {
     public Mage(String name) {
         super(name, 1000, 350);
     }

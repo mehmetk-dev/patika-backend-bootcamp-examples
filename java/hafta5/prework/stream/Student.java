@@ -8,7 +8,7 @@ public class Student {
     public String name;
     public List<Course> courses;
 
-    public Student(String name,List<Course> courses){
+    public Student(String name, List<Course> courses) {
         this.name = name;
         this.courses = courses;
     }

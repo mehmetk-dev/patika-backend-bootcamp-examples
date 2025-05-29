@@ -15,13 +15,13 @@ public class MemberDao {
         this.connection = connection;
     }
 
-    public void save(Member member){
+    public void save(Member member) {
 
         String sql = """
                     INSERT INTO members(name)  VALUES(?)
                 """;
 
-        try(PreparedStatement ps = connection.prepareStatement(sql)){
+        try (PreparedStatement ps = connection.prepareStatement(sql)) {
 
             ps.setString(1, member.getName());
             ps.executeUpdate();
@@ -30,7 +30,8 @@ public class MemberDao {
         }
 
     }
-    public void saveAll(List<Member> members){
+
+    public void saveAll(List<Member> members) {
 
         members.forEach(this::save);
     }

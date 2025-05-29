@@ -1,12 +1,12 @@
 package hafta2.oop.user;
 
-public class AgeUserCheckService implements IUserCheckService{
+public class AgeUserCheckService implements IUserCheckService {
 
-        @Override
-        public boolean checkUser(User user){
-            if (user.getAge() >= 18){
-                return true;
-            }
-            return false;
+    @Override
+    public boolean checkUser(User user) {
+        if (user.getAge() >= 18) {
+            return true;
         }
+        return false;
+    }
 }

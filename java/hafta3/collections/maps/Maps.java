@@ -9,16 +9,16 @@ public class Maps {
 
         Map<Integer, String> films = new TreeMap<>();
 
-        films.put(2010,"Inceptıon");
-        films.put(2021,"Dune");
-        films.put(1974,"Chinatown");
-        films.put(2018,"Green Book");
-        films.put(1954,"Seven Samurai");
+        films.put(2010, "Inceptıon");
+        films.put(2021, "Dune");
+        films.put(1974, "Chinatown");
+        films.put(2018, "Green Book");
+        films.put(1954, "Seven Samurai");
 
         System.out.println(films.entrySet());
 
-        for (Map.Entry<Integer,String> entir : films.entrySet()){
-            System.out.println(entir.getValue() + " = "+ entir.getKey() );
+        for (Map.Entry<Integer, String> entir : films.entrySet()) {
+            System.out.println(entir.getValue() + " = " + entir.getKey());
         }
     }
 }

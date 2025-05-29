@@ -1,6 +1,6 @@
 package hafta7.prework.threads;
 
-public class ThreadExtendPrinter extends Thread{
+public class ThreadExtendPrinter extends Thread {
 
     private String name;
 

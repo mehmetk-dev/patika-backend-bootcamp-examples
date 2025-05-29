@@ -9,7 +9,7 @@ public class FileWriterMain {
 
         String content = "merhaba merhaba merhaba merhaba";
 
-        try(FileWriter fw = new FileWriter("writer.txt",true)){
+        try (FileWriter fw = new FileWriter("writer.txt", true)) {
 
             fw.write(content);
 

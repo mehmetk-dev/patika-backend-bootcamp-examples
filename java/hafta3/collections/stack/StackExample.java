@@ -14,22 +14,22 @@ public class StackExample {
 
         Stack<Character> stack = new Stack<>();
 
-        for (int i = 0; i < (cumle.length() / 2); i++){
+        for (int i = 0; i < (cumle.length() / 2); i++) {
             char c = cumle.charAt(i);
             stack.push(c);
         }
-        if (isPalindrom(cumle,stack)){
+        if (isPalindrom(cumle, stack)) {
             System.out.println("Cümle palindromdir");
-        }else{
+        } else {
             System.out.println("Cümle palidrom değildir");
         }
         System.out.println(stack);
 
     }
 
-    public static boolean isPalindrom(String cumle,Stack<Character> stack){
+    public static boolean isPalindrom(String cumle, Stack<Character> stack) {
         for (int i = (cumle.length() / 2) + 1; i < cumle.length(); i++) {
-            if (cumle.charAt(i) != stack.pop()){
+            if (cumle.charAt(i) != stack.pop()) {
                 return false;
             }
         }

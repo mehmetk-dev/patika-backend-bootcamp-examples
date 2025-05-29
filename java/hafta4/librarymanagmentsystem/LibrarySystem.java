@@ -7,18 +7,19 @@ public class LibrarySystem {
 
     static Scanner scanner = new Scanner(System.in);
     static BookService bookService = new BookService();
+
     public static void main(String[] args) {
         System.out.println("Welcome to Library Management System");
 
         int choice;
 
-        while(true){
+        while (true) {
             showMenu();
 
-            try{
+            try {
                 choice = scanner.nextInt();
                 scanner.nextLine();
-            }catch (InputMismatchException e){ // Catch exception if the input is not an integer
+            } catch (InputMismatchException e) { // Catch exception if the input is not an integer
                 System.out.println("Invalid option!"); // Print error message if input is invalid
                 continue; // Continue the loop and prompt the user again
             }
@@ -50,7 +51,7 @@ public class LibrarySystem {
     }
 
     // Helper method to check if any of the input fields are empty
-    public static boolean isEmptyField(String... fields){
+    public static boolean isEmptyField(String... fields) {
         for (String field : fields) {
             if (field.isEmpty()) {
                 return true; // Return true if any field is empty
@@ -60,7 +61,7 @@ public class LibrarySystem {
     }
 
     // Display the main menu with options for the user
-    public static void showMenu(){
+    public static void showMenu() {
         System.out.println("\nPlease select an option:");
         System.out.println("1. Add a new book");
         System.out.println("2. Display all books");
@@ -95,12 +96,14 @@ public class LibrarySystem {
             System.out.println("A book with this ISBN already exists.");  // Error message if book already exists
         }
     }
+
     // Display all books in the library
-    public static void displayAllBooks(){
+    public static void displayAllBooks() {
         bookService.listBooks(); // Call the method to list all books
     }
+
     // Search for a book by its title
-    public static void searchBook(){
+    public static void searchBook() {
         System.out.print("Enter the title of the book you want to search for:");
         String title = scanner.nextLine().trim();
         if (title.isEmpty()) {
@@ -111,20 +114,21 @@ public class LibrarySystem {
     }
 
     // Check out a book using its ISBN
-    public static void bookCheckout(){
+    public static void bookCheckout() {
         System.out.print("Enter the ISBN of the book you want to check out:");
         String isbn = scanner.nextLine().trim();
-        if (isEmptyField(isbn)){
+        if (isEmptyField(isbn)) {
             System.out.println("ISBN cannot be empty.");
             return;
         }
         bookService.checkOutBook(isbn);// Call the method to check out the book
     }
+
     // Return a book using its ISBN
-    public static void bookReturn(){
+    public static void bookReturn() {
         System.out.print("Enter the ISBN of the book you want to return:");
         String isbn = scanner.nextLine().trim();
-        if (isEmptyField(isbn)){
+        if (isEmptyField(isbn)) {
             System.out.println("ISBN cannot be empty.");
             return;
         }

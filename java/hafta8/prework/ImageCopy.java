@@ -9,15 +9,15 @@ public class ImageCopy {
         var input = new File("C:\\Users\\Mehme\\IdeaProjects\\java-dersleri\\java\\Hafta8\\Prework\\resim.jpg");
         var output = new File("C:\\Users\\Mehme\\IdeaProjects\\java-dersleri\\java\\Hafta8\\Prework\\yeniresim.jpg");
 
-        try(BufferedInputStream bis = new BufferedInputStream(new FileInputStream(input));
-            BufferedOutputStream bos = new BufferedOutputStream(new FileOutputStream(output))){
+        try (BufferedInputStream bis = new BufferedInputStream(new FileInputStream(input));
+             BufferedOutputStream bos = new BufferedOutputStream(new FileOutputStream(output))) {
 
             byte[] buffer = new byte[1024];
             int read;
 
-            while((read = bis.read(buffer)) != -1){
+            while ((read = bis.read(buffer)) != -1) {
 
-                bos.write(buffer,0,read);
+                bos.write(buffer, 0, read);
             }
             System.out.println("Resim kopyalandı.");
 

@@ -6,7 +6,7 @@ import java.util.Scanner;
 
 public class ReservedNumbers {
     public static void main(String[] args) {
-        LinkedList<Integer> numbers =  new LinkedList<>();
+        LinkedList<Integer> numbers = new LinkedList<>();
         System.out.println("Bir sayı giriniz");
         Scanner scanner = new Scanner(System.in);
         int num = scanner.nextInt();
@@ -15,7 +15,7 @@ public class ReservedNumbers {
 //        StringBuilder reserved = new StringBuilder(String.valueOf(numbers));
 //        System.out.println(reserved.reverse());
 
-        while(num > 0){
+        while (num > 0) {
             numbers.add(num % 10);
             num /= 10;
         }

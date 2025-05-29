@@ -11,12 +11,12 @@ public class FaizHesaplama {
         int balance = scanner.nextInt();
         System.out.println("Kaç Yıl Vade istiyorsunuz?");
         int term = scanner.nextInt();
-        double balanceWithInterest= balance;
+        double balanceWithInterest = balance;
         final double interestRate = 0.06;
 
         for (int i = 1; i <= term; i++) {
             balanceWithInterest += balanceWithInterest * (interestRate);
-            System.out.println(i +".Yıl Paranız = " + (int)balanceWithInterest );
+            System.out.println(i + ".Yıl Paranız = " + (int) balanceWithInterest);
         }
     }
 }

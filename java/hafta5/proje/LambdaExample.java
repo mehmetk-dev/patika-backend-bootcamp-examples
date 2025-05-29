@@ -25,8 +25,8 @@ public class LambdaExample {
 //        Function<Integer,Double> square = x -> Math.pow(x,2);
 //
 //        numbers.forEach(n -> System.out.println(square.apply(n)));
-          numbers.replaceAll(n -> n * 2);
-          numbers.forEach(number ->     System.out.println(number));
+        numbers.replaceAll(n -> n * 2);
+        numbers.forEach(number -> System.out.println(number));
     }
 }
 

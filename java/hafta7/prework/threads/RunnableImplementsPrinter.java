@@ -1,10 +1,10 @@
 package hafta7.prework.threads;
 
-public class RunnableImplementsPrinter implements Runnable{
+public class RunnableImplementsPrinter implements Runnable {
 
     private String name;
 
-    public RunnableImplementsPrinter(String name){
+    public RunnableImplementsPrinter(String name) {
         this.name = name;
     }
 

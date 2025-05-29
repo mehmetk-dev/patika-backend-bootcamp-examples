@@ -22,8 +22,8 @@ public class IntermadiateOperations {
 
         List<Customer> filteredCustomerList = new ArrayList<>();
 
-        for(Customer customer: customerList){
-            if (customer.getName().startsWith("M")){
+        for (Customer customer : customerList) {
+            if (customer.getName().startsWith("M")) {
                 filteredCustomerList.add(customer);
             }
         }
@@ -38,7 +38,7 @@ public class IntermadiateOperations {
                 .map(customer -> customer.getName().length())
                 .toList();
 
-        List<String> stringList =customerList.stream().map(customer -> customer.getName().toUpperCase()).toList();
+        List<String> stringList = customerList.stream().map(customer -> customer.getName().toUpperCase()).toList();
 
         System.out.println(list + " " + stringList);
 

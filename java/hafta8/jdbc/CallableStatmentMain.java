@@ -20,13 +20,13 @@ public class CallableStatmentMain {
         String username = properties.getProperty("db.username");
         String password = properties.getProperty("db.password");
 
-        Connection connection = DriverManager.getConnection(url,username,password);
+        Connection connection = DriverManager.getConnection(url, username, password);
 
         CallableStatement callableStatmentMain = connection.prepareCall("CALL add_employee(?,?,?)");
 
-        callableStatmentMain.setInt(1,10);
-        callableStatmentMain.setInt(2,1);
-        callableStatmentMain.setString(3,"mehmet");
+        callableStatmentMain.setInt(1, 10);
+        callableStatmentMain.setInt(2, 1);
+        callableStatmentMain.setString(3, "mehmet");
         callableStatmentMain.execute();
         System.out.println("Çalışann kaydedildi");
     }

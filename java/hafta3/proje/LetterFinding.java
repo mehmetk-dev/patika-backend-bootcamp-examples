@@ -22,10 +22,10 @@ public class LetterFinding {
         for (int i = 0; i < 4; i++) {
             System.out.println("Bir harf giriniz");
             String chars = scanner.nextLine();
-            if (array.contains(chars)){ // Array'de girilen harf kontrolü
+            if (array.contains(chars)) { // Array'de girilen harf kontrolü
                 int index = array.indexOf(chars);
-                array.set(index,"found"); //Set metoduyla girdiğimiz index'teki değeri değiştiriyoruz.
-            }else{
+                array.set(index, "found"); //Set metoduyla girdiğimiz index'teki değeri değiştiriyoruz.
+            } else {
                 array.add(chars);
             }
         }

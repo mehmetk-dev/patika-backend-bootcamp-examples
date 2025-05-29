@@ -13,7 +13,7 @@ public class SemaphoreExample {
         } catch (InterruptedException e) {
             throw new RuntimeException(e);
         }
-        System.out.println("Semaphore starting... ID: " + i );
+        System.out.println("Semaphore starting... ID: " + i);
 
         try {
             Thread.sleep(5000);

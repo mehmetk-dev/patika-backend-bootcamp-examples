@@ -6,7 +6,7 @@ public class WaitAndNotifyExample {
 
     public void thread1Function() throws InterruptedException {
 
-        synchronized (this){
+        synchronized (this) {
             System.out.println("Thread 1 is working...");
             System.out.println("Thread 1 is waiting for Thread 2 to wake up.");
 
@@ -17,13 +17,12 @@ public class WaitAndNotifyExample {
     }
 
 
-
     public void thread2Function() throws InterruptedException {
 
         Scanner scanner = new Scanner(System.in);
         Thread.sleep(2000);
 
-        synchronized (this){
+        synchronized (this) {
             System.out.println("Thread 2 is working...");
 
             System.out.println("If you want to continue, press any key.");
