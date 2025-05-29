@@ -12,7 +12,9 @@ public interface ICustomerDAO {
 
     void update(Customer customer);
 
-    void deleteById(int id);
+    void delete(Customer customer);
 
     List<Customer> findAll();
+
+    Customer findByMail(String mail);
 }
