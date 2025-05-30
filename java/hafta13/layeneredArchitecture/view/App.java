@@ -27,7 +27,7 @@ public class App {
 //        customerList.forEach(System.out::println);
 
         Customer customer = customerService.findById(1);
-        customer.setEmail("patika@mail2");
+        customer.setEmail("patika@mail2 ");
         customerService.update(customer);
     }
 }
