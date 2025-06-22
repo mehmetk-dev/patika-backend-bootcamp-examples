@@ -1,7 +1,5 @@
 package Examples;
 
-import java.util.ArrayList;
-
 public class BinarySearch {
 
     public static int binarySearch(int[] array, int target) {
@@ -9,14 +7,14 @@ public class BinarySearch {
         int low = 0;
         int high = array.length - 1;
 
-        while (low <= high) {
-            int mid = (low + high) / 2;
-
-            if (array[mid] == target) {
+        while(low <= high){
+            int mid = high / 2;
+            if (array[mid] == target){
                 return mid;
-            } else if (array[mid] < target) {
-                low = mid + 1;
-            } else {
+            }
+            if (array[mid] < target){
+                low =  mid + 1;
+            }else{
                 high = mid - 1;
             }
         }
@@ -44,6 +42,6 @@ public class BinarySearch {
 
         int[] numbers = {1, 6, 123, 544, 3212, 5433, 13123};
 
-        System.out.println(binarySearch(numbers, 544));
+        System.out.println(binarySearch(numbers, 13123));
     }
 }
