@@ -9,7 +9,7 @@ public class LetterCount {
         System.out.println(letterCount("Helo world"));
     }
 
-    public static String letterCount(String str){
+    public static String letterCount(String str) {
         //hello world
 //
 //        String[] word = str.split(" ");
@@ -29,17 +29,17 @@ public class LetterCount {
         int maxLetterCount = 1;
         String wordWithMostRepeatLetter = "";
 
-        for (String word: words){
+        for (String word : words) {
             char[] characters = word.toCharArray();
-            for (char c :  characters){
+            for (char c : characters) {
                 int letterCount = word.length() - word.replace(String.valueOf(c), "").length();
-                if (letterCount > maxLetterCount){
+                if (letterCount > maxLetterCount) {
                     maxLetterCount = letterCount;
                     wordWithMostRepeatLetter = word;
                 }
             }
         }
-        if (maxLetterCount > 1){
+        if (maxLetterCount > 1) {
             return wordWithMostRepeatLetter;
         }
         return "-1";
