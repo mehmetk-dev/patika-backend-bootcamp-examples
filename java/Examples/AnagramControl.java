@@ -5,7 +5,7 @@ public class AnagramControl {
     public static void main(String[] args) {
 
         System.out.println(areAnagrams("listen", "silent"));  // true
-        System.out.println(areAnagrams("hello", "world"));    // false
+        System.out.println(areAnagrams("hello", "holle"));    // false
         System.out.println(areAnagrams("race", "care"));      // true
     }
 
